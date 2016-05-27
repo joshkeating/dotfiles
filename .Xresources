@@ -49,3 +49,12 @@ URxvt.font: xft:Source Code Pro:regular:size=14
 URxvt.letterSpace: -1
 URxvt.scrollStyle:          rxvt
 URxvt.scrollBar:            false
+
+! ------------------------------------------------------------------------------
+! ROFI Color theme
+! ------------------------------------------------------------------------------
+rofi.color-enabled: true
+rofi.color-window: #1e1e1e, #7587a6, #1e1e1e
+rofi.color-normal: #1e1e1e, #7587a6, #1e1e1e, #7587a6, #1e1e1e
+rofi.color-active: #1e1e1e, #7587a6, #1e1e1e, #7587a6, #1e1e1e
+rofi.color-urgent: #1e1e1e, #7587a6, #1e1e1e, #7587a6, #1e1e1e

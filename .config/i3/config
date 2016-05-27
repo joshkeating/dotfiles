@@ -75,6 +75,9 @@ bindsym XF86AudioRaiseVolume exec "amixer -q sset Master,0 1+ unmute"
 bindsym XF86AudioLowerVolume exec "amixer -q sset Master,0 1- unmute"
 bindsym XF86AudioMute exec "amixer -q sset Master,0 toggle"
 
+# launch rofi
+bindsym XF86Search exec rofi -show run
+
 # focus the parent container
 bindsym $mod+a focus parent
 
@@ -149,7 +152,7 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
         status_command i3status
-	font Source Sans Pro 12
+	font pango:Source Sans Pro, Awesome 10
 	colors {
 		statusline	#ffffff	
 		background	#2c2e2f
@@ -161,6 +164,3 @@ bar {
         	urgent_workspace       #2c2e2f 		#2c2e2f 	#c7a551
    }
 }
-
-exec feh --bg-scale /home/josh/Downloads/trees_mist.jpg
-
