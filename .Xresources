@@ -49,6 +49,7 @@ URxvt.font: xft:Source Code Pro:regular:size=14
 URxvt.letterSpace: -1
 URxvt.scrollStyle:          rxvt
 URxvt.scrollBar:            false
+URxvt.cursorBlink:          true
 
 ! ------------------------------------------------------------------------------
 ! ROFI Color theme
