@@ -1,1 +1,3 @@
-# These are my dotfiles and stuff
+# These are my dotfiles
+
+TODO: a script to link all my dotfiles to $HOME
