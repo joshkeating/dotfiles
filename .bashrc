@@ -10,7 +10,7 @@ PS1='[\u@\h \W]\$ '
 
 #----------------Alias Section----------------#
 
-alias ls='ls --color=auto'
+alias ls='ls -l'
 alias colors='./Scripts/colors.sh'
 
 #---------------------------------------------#
