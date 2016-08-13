@@ -20,3 +20,8 @@ alias run='rofi -show run'
 # Set ls colors
 LS_COLORS=$LS_COLORS:'di=34:' ; export LS_COLORS
 
+# Set editor
+export VISUAL=vim
+export EDITOR="$VISUAL"
+
+
