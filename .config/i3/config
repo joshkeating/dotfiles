@@ -165,7 +165,7 @@ bar {
 		background	#2c2e2f
 
 		# class 	       border 		backgrd 	text
-        	focused_workspace      #6D9CBE 		#2c2e2f 	#ffffff
+        	focused_workspace      #6D9CBE 		#6D9CBE 	#2c2e2f
         	active_workspace       #2c2e2f 		#2c2e2f 	#696f89
         	inactive_workspace     #2c2e2f 		#2c2e2f 	#696f89
         	urgent_workspace       #2c2e2f 		#2c2e2f 	#c7a551
