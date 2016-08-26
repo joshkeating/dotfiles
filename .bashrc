@@ -15,6 +15,7 @@ alias colors='./Scripts/colors.sh'
 alias stats='screenfetch'
 alias lock='/home/josh/Scripts/lock.sh'
 alias run='rofi -show run'
+alias pipes='./Scripts/pipes.sh'
 
 
 # Set ls colors
