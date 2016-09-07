@@ -173,5 +173,5 @@ bar {
 }
 
 # set wallpaper
-exec feh --bg-scale /home/josh/Downloads/stairs.jpg
+exec feh --bg-scale /home/josh/Downloads/rainy_seattle.jpg
 
