@@ -19,7 +19,7 @@ alias lock='/home/josh/Scripts/lock.sh'
 alias run='rofi -show run'
 alias pipes='./Scripts/pipes.sh'
 alias shutdown='sudo shutdown now'
-alias restart='sudo restart now'
+alias reboot='sudo reboot now'
 
 
 # Set ls colors

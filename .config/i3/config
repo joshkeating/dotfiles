@@ -174,5 +174,5 @@ status_command i3status
 
 
 # set wallpaper
-exec feh --bg-scale /home/josh/Downloads/rainy_seattle.jpg
+exec feh --bg-scale /home/josh/Downloads/stairs.jpg
 

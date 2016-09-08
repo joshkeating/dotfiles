@@ -1,8 +1,3 @@
-# These are my dotfiles
+# These are my dotfiles (configuration files)
 
-TODO: a script to link all my dotfiles to $HOME
-
-TODO: switch to zsh and get powerline to work
-
-TODO: maybe install lemonbar
 
