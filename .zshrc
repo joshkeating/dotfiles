@@ -31,3 +31,11 @@ export VISUAL=vim
 export EDITOR="$VISUAL"
 
 ttyctl -f
+
+powerline-daemon -q
+# Powerline
+if [[ -r /usr/lib/python3.5/site-packages/powerline/bindings/zsh/powerline.zsh ]]; then
+    source /usr/lib/python3.5/site-packages/powerline/bindings/zsh/powerline.zsh
+fi
+
+#./usr/lib/python3.5/site-packages/powerline/bindings/zsh/powerline.zsh
