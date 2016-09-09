@@ -20,7 +20,7 @@ alias run='rofi -show run'
 alias pipes='./Scripts/pipes.sh'
 alias shutdown='sudo shutdown now'
 alias reboot='sudo reboot now'
-
+alias wifi='sudo wifi-menu'
 
 # Set ls colors
 LS_COLORS=$LS_COLORS:'di=34:' ; export LS_COLORS
