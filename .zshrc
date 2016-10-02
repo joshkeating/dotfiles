@@ -21,6 +21,7 @@ alias pipes='./Scripts/pipes.sh'
 alias shutdown='sudo shutdown now'
 alias reboot='sudo reboot now'
 alias wi='sudo wifi-menu'
+alias clch='sudo pacman -Sc'
 # this is slightly disgusting
 alias rw='sudo netctl restart wlp58s0-University\ of\ Washington'
 
