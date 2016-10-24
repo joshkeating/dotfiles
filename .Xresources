@@ -57,6 +57,8 @@ URxvt.cursorBlink:          true
 ! ------------------------------------------------------------------------------
 ! ROFI Color theme
 ! ------------------------------------------------------------------------------
+rofi.font: Source Sans Pro 14
+rofi.padding: 16
 rofi.color-enabled: true
 rofi.color-window: #262121, #6d9cbe, #262121
 rofi.color-normal: #262121, #6d9cbe, #262121, #6d9cbe, #262121
