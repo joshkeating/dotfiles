@@ -79,6 +79,9 @@ bindsym XF86AudioMute exec "amixer -q sset Master,0 toggle"
 # launch rofi
 bindsym XF86Search exec rofi -show run
 
+# take selective screenshot with scrot
+bindsym 33 exec scrot -s
+
 # focus the parent container
 bindsym $mod+a focus parent
 
