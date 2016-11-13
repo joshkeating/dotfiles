@@ -11,6 +11,9 @@ set $mod Mod4
 # is used in the bar {} block below.
 font pango:Source Sans Pro 12
 
+# Set border width for all new windows
+new_window 1pixel
+
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
