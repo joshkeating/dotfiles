@@ -54,6 +54,11 @@ URxvt.scrollStyle:          rxvt
 URxvt.scrollBar:            false
 URxvt.cursorBlink:          true
 
+! Transparency is kinda nice looking
+URxvt.transparent: true
+URxvt.shading: 30
+
+
 ! ------------------------------------------------------------------------------
 ! ROFI Color theme
 ! ------------------------------------------------------------------------------
