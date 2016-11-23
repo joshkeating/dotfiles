@@ -22,6 +22,12 @@ alias shutdown='sudo shutdown now'
 alias reboot='sudo reboot now'
 alias wi='sudo wifi-menu'
 alias clch='sudo pacman -Sc'
+alias gst="git status"
+alias status="git status"
+alias commit="git commit"
+alias push="git push"
+alias pull="git pull"
+alias merge="git merge"
 # this is slightly disgusting
 alias rw='sudo netctl restart wlp58s0-University\ of\ Washington'
 
