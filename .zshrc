@@ -28,6 +28,7 @@ alias commit="git commit"
 alias push="git push"
 alias pull="git pull"
 alias merge="git merge"
+alias ranger='ranger --choosedir=$HOME/rangerdir; LASTDIR=`cat $HOME/rangerdir`; cd "$LASTDIR"'
 # this is slightly disgusting
 alias rw='sudo netctl restart wlp58s0-University\ of\ Washington'
 
