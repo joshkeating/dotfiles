@@ -29,8 +29,6 @@ alias push="git push"
 alias pull="git pull"
 alias merge="git merge"
 alias ranger='ranger --choosedir=$HOME/rangerdir; LASTDIR=`cat $HOME/rangerdir`; cd "$LASTDIR"'
-# this is slightly disgusting
-alias rw='sudo netctl restart wlp58s0-University\ of\ Washington'
 
 # Set ls colors
 LS_COLORS=$LS_COLORS:'di=34:' ; export LS_COLORS
