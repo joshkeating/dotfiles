@@ -24,6 +24,7 @@ alias wi='sudo wifi-menu'
 alias clch='sudo pacman -Sc'
 alias gst="git status"
 alias status="git status"
+alias adda='git add .'
 alias commit="git commit"
 alias push="git push"
 alias pull="git pull"
