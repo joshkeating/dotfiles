@@ -29,6 +29,7 @@ alias commit="git commit"
 alias push="git push"
 alias pull="git pull"
 alias merge="git merge"
+# fuck broadcom
 alias rw="sudo netctl restart wlp58s0-University\ of\ Washington"
 alias ranger='ranger --choosedir=$HOME/rangerdir; LASTDIR=`cat $HOME/rangerdir`; cd "$LASTDIR"'
 
