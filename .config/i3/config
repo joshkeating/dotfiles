@@ -162,28 +162,40 @@ mode "resize" {
         bindsym Return mode "default"
         bindsym Escape mode "default"
 }
-
+# resize the window
 bindsym $mod+r mode "resize"
+
+# start polybar
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+
+
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
-bar {	
+#bar {
+	
+	#status_command polybar Bar
+    #tray_output primary
+    #position bottom
+    
 
-	status_command ~/.config/i3/i3status_primary.sh ~/.i3status.conf
-        tray_output primary
-#	status_command i3status
-	font pango:Source Sans Pro, Awesome 14
-	colors {
-		statusline	#ffffff	
-		background	#2c2e2f
+	#position bottom
+	#tray_output primary
+	#status_command ~/.config/i3/i3status_primary.sh ~/.i3status.conf
+	#status_command i3status
+
+	#font pango:Source Sans Pro, Awesome 14
+	#colors {
+		#statusline	#ffffff	
+		#background	#2c2e2f
 
 		# class 	       border 		backgrd 	text
-        	focused_workspace      #6D9CBE 		#6D9CBE 	#2c2e2f
-        	active_workspace       #2c2e2f 		#2c2e2f 	#696f89
-        	inactive_workspace     #2c2e2f 		#2c2e2f 	#696f89
-        	urgent_workspace       #2c2e2f 		#2c2e2f 	#c7a551
-  	 }
-}
+        	#focused_workspace      #6D9CBE 		#6D9CBE 	#2c2e2f
+        	#active_workspace       #2c2e2f 		#2c2e2f 	#696f89
+        	#inactive_workspace     #2c2e2f 		#2c2e2f 	#696f89
+        	#urgent_workspace       #2c2e2f 		#2c2e2f 	#c7a551
+  	 #}
+#}
 
 
 # set wallpaper
