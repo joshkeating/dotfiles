@@ -26,7 +26,7 @@ border-top = 0
 
 modules-left = bspwm i3
 ;modules-center = xwindow
-modules-right = fs-root volume wifi battery cpu date
+modules-right = fs-root volume wifi battery cpu memory date
 
 font-0 = SourceSansPro:weight=regular:size=16;0
 font-1 = FontAwesome:size=16;-2
@@ -56,7 +56,7 @@ tray-position = none
 [module/fs-root]
 type = internal/fs
 mount-0 = /
-label-mounted = %{F#e60053}%percentage_used%%{F-} used of %mountpoint%
+label-mounted = %{F#6d9cbe}%free%%{F-}
 
 
 [module/i3]
@@ -93,14 +93,14 @@ label-urgent-padding = 4
 
 [module/cpu]
 type = internal/cpu
-interval = 2
-label = %{F#666}%{F#cc} %percentage%
+interval = 5
+label = %{F#ffffff} %{F#cc} %percentage%
 
 
 [module/memory]
 type = internal/memory
-interval = 2
-label = %{F#666}%{F#cc} %percentage_used%
+interval = 5
+label = %{F#ffffff} %{F#cc} %percentage_used%
 
 
 [module/wifi]
@@ -109,7 +109,7 @@ interface = wlp58s0
 interval = 3.0
 
 format-connected = <ramp-signal> <label-connected>
-label-connected = %{O-6 F#6d9cbe}%{O2 F#cc}%essid%
+label-connected = %{O-6 F#6d9cbe}%{O2 F#6d9cbe}%essid%
 label-disconnected = %{F#ff9872}%{F#cc} not connected
 label-disconnected-foreground = #66
 
@@ -182,10 +182,10 @@ full-at = 98
 time-format = %H:%M
 
 format-charging = <animation-charging> <label-charging>
-label-charging = %percentage% %time%
+label-charging = %percentage%
 
 format-discharging = <ramp-capacity> <label-discharging>
-label-discharging = %percentage% %time%
+label-discharging = %percentage%
 
 format-full = <label-full>
 format-full-prefix = " "
@@ -199,7 +199,7 @@ ramp-capacity-foreground = #ffffff
 animation-charging-0 = " "
 animation-charging-1 = " "
 animation-charging-2 = " "
-animation-charging-foreground = #666
+animation-charging-foreground = #ffffff
 animation-charging-framerate = 750
 
 
@@ -236,17 +236,17 @@ menu-2-1-foreground = ${colors.accent}
 menu-2-1-exec = menu-open-0
 
 
-[module/app-menu]
-type = custom/menu
-label-open = 
-label-close = 
+# [module/app-menu]
+# type = custom/menu
+# label-open = 
+# label-close = 
 
-menu-0-0 = Vimperator
-menu-0-0-exec = web
-menu-0-1 = Termite
-menu-0-1-exec = termite
-menu-0-2 = Pcmanfm
-menu-0-2-exec = pcmanfm
+# menu-0-0 = Vimperator
+# menu-0-0-exec = web
+# menu-0-1 = Termite
+# menu-0-1-exec = termite
+# menu-0-2 = Pcmanfm
+# menu-0-2-exec = pcmanfm
 
 
 [module/xkeyboard]
