@@ -56,7 +56,7 @@ tray-position = none
 [module/fs-root]
 type = internal/fs
 mount-0 = /
-label-mounted = %{F#b9b9b9}%free%%{F-}
+label-mounted = %{F#cecece}%free%%{F-}
 
 
 [module/i3]
@@ -94,13 +94,13 @@ label-urgent-padding = 4
 [module/cpu]
 type = internal/cpu
 interval = 5
-label = %{F#b9b9b9} %{F#b9b9b9} %percentage%
+label = %{F#cecece} %{F#cecece} %percentage%
 
 
 [module/memory]
 type = internal/memory
 interval = 5
-label = %{F#b9b9b9} %{F#b9b9b9} %percentage_used%
+label = %{F#cecece} %{F#cecece} %percentage_used%
 
 
 [module/wifi]
@@ -133,18 +133,18 @@ ramp-signal-foreground = #6d9cbe
 
 [module/date]
 type = internal/date
-date = %%{F#b9b9b9}%{F-} %b %d  %%{F#b9b9b9}%%{F-} %l:%M
+date = %%{F#cecece}%{F#cecece} %b %d  %%{F#cecece}%%{F#cecece} %l:%M
 interval = 5
 
 
-[module/xbacklight]
-type = internal/xbacklight
-format = <ramp> <label>
-ramp-0 = 
-ramp-1 = 
-ramp-2 = 
-ramp-foreground = #666
-label-foreground = ${root.foreground}
+# [module/xbacklight]
+# type = internal/xbacklight
+# format = <ramp> <label>
+# ramp-0 = 
+# ramp-1 = 
+# ramp-2 = 
+# ramp-foreground = #666
+# label-foreground = ${root.foreground}
 
 
 [module/volume]
@@ -155,7 +155,7 @@ headphone-mixer = Headphone
 headphone-id = 9
 
 format-volume = <ramp-volume> <label-volume>
-label-volume = %{F#b9b9b9}%percentage%
+label-volume = %{F#cecece}%percentage%
 label-volume-foreground = ${root.foreground}
 
 format-muted-prefix = " "
@@ -166,7 +166,7 @@ ramp-volume-0 = " "
 ramp-volume-1 = " "
 ramp-volume-2 = " "
 ramp-volume-3 = " "
-ramp-volume-foreground = #b9b9b9
+ramp-volume-foreground = #cecece
 
 ramp-headphones-0 = ""
 ramp-headphones-1 = ""
@@ -182,24 +182,24 @@ full-at = 98
 time-format = %H:%M
 
 format-charging = <animation-charging> <label-charging>
-label-charging = %{F#b9b9b9}%percentage%
+label-charging = %{F#cecece}%percentage%
 
 format-discharging = <ramp-capacity> <label-discharging>
-label-discharging = %{F#b9b9b9}%percentage%
+label-discharging = %{F#cecece}%percentage%
 
 format-full = <label-full>
 format-full-prefix = " "
-format-full-prefix-foreground = #b9b9b9
+format-full-prefix-foreground = #cecece
 
 ramp-capacity-0 = " "
 ramp-capacity-1 = " "
 ramp-capacity-2 = " "
-ramp-capacity-foreground = #b9b9b9
+ramp-capacity-foreground = #cecece
 
 animation-charging-0 = " "
 animation-charging-1 = " "
 animation-charging-2 = " "
-animation-charging-foreground = #b9b9b9
+animation-charging-foreground = #cecece
 animation-charging-framerate = 750
 
 
