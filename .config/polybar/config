@@ -110,7 +110,7 @@ interval = 3.0
 
 format-connected = <ramp-signal> <label-connected>
 label-connected = %{O-6 F#6d9cbe}%{O2 F#6d9cbe}%essid%
-label-disconnected = %{F#ff9872}%{F#cc} not connected
+label-disconnected = %{F#ff9872}%{F#ff9872} not connected
 label-disconnected-foreground = #66
 
 ramp-signal-0 = " "
