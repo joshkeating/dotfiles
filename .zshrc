@@ -31,6 +31,7 @@ alias pull="git pull"
 alias merge="git merge"
 # fuck broadcom
 alias rw="sudo netctl restart wlp58s0-University\ of\ Washington"
+alias trw="sudo netctl restart wlp58s0-our\ network"
 alias ranger='ranger --choosedir=$HOME/rangerdir; LASTDIR=`cat $HOME/rangerdir`; cd "$LASTDIR"'
 
 # Set ls colors
