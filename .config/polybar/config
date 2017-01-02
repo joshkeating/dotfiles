@@ -19,7 +19,6 @@ monitor = ${env:MONITOR:eDP1}
 bottom = true
 scroll-up = i3wm-wsnext
 scroll-down = i3wm-wsprev
-
 border-top = 0
 ;border-top-color = ${colors.bordercolor}
 modules-left = bspwm i3
@@ -31,20 +30,16 @@ width = 100%
 height = 36
 background = ${colors.background}
 foreground = ${colors.foreground}
-
 underline-size = 2
 underline-color = ${colors.linecolor}
 overline-size = 1
 overline-color = ${colors.linecolor}
-
 border-bottom-color = ${colors.bordercolor}
-
 spacing = 1
 padding-left = 0
 padding-right = 2
 module-margin-left = 1
 module-margin-right = 2
-
 tray-position = none
 
 
@@ -60,26 +55,20 @@ index-sort = true
 pin-workspaces = true
 enable-click = true
 enable-scroll = true
-
 format = <label-state> <label-mode>
-
 label-mode = %mode%
 label-mode-padding = 2
 label-mode-background = #e60053
-
 label-focused = %index%
 label-focused-foreground = #ffffff
 label-focused-background = #3f3f3f
 label-focused-underline = #6d9cbe
 label-focused-padding = 4
-
 label-unfocused = %index%
 label-unfocused-padding = 4
-
 label-visible = %index%
 label-visible-underline = #555555
 label-visible-padding = 4
-
 label-urgent = %index%
 label-urgent-foreground = #000000
 label-urgent-background = #bd2c40
@@ -102,12 +91,10 @@ label = %{F#cecece} %{F#cecece} %percentage_used%
 type = internal/network
 interface = wlp58s0
 interval = 3.0
-
 format-connected = <ramp-signal> <label-connected>
 label-connected = %{O-6 F#6d9cbe}%{O2 F#6d9cbe}%essid%
 label-disconnected = %{F#ff9872}%{F#ff9872} not connected
 label-disconnected-foreground = #66
-
 ramp-signal-0 = " "
 ramp-signal-1 = " "
 ramp-signal-2 = " "
@@ -120,7 +107,6 @@ ramp-signal-foreground = #6d9cbe
 # type = internal/network
 # interface = net0
 # interval = 3.0
-
 # label-connected = %{T3}%local_ip%%{T-}
 # label-disconnected = %{T3}Not connected%{T-}
 # label-disconnected-foreground = #66
@@ -148,49 +134,38 @@ mapped = true
 speaker-mixer = Speaker
 headphone-mixer = Headphone
 headphone-id = 9
-
 format-volume = <ramp-volume> <label-volume>
 label-volume = %{F#cecece}%percentage%
 label-volume-foreground = ${root.foreground}
-
 format-muted-prefix = " "
 format-muted-foreground = #666
 label-muted = sound muted
-
 ramp-volume-0 = " "
 ramp-volume-1 = " "
 ramp-volume-2 = " "
 ramp-volume-3 = " "
 ramp-volume-foreground = #cecece
-
 ramp-headphones-0 = ""
 ramp-headphones-1 = ""
 
 
 [module/battery]
 type = internal/battery
-
 battery = BAT0
 adapter = AC
-
 full-at = 100
 time-format = %H:%M
-
 format-charging = <animation-charging> <label-charging>
 label-charging = %{F#cecece}%percentage%
-
 format-discharging = <ramp-capacity> <label-discharging>
 label-discharging = %{F#cecece}%percentage%
-
 format-full = <label-full>
 format-full-prefix = " "
 format-full-prefix-foreground = #cecece
-
 ramp-capacity-0 = " "
 ramp-capacity-1 = " "
 ramp-capacity-2 = " "
 ramp-capacity-foreground = #cecece
-
 animation-charging-0 = " "
 animation-charging-1 = " "
 animation-charging-2 = " "
@@ -201,11 +176,9 @@ animation-charging-framerate = 750
 
 [module/power-menu]
 type = custom/menu
-
 label-open = 
 label-close = 
 label-separator = /
-
 menu-0-0 = Terminate WM
 menu-0-0-foreground = ${colors.accent}
 menu-0-0-exec = bspc quit -1
@@ -215,14 +188,12 @@ menu-0-1-exec = menu-open-1
 menu-0-2 = Power off
 menu-0-2-foreground = ${colors.accent}
 menu-0-2-exec = menu-open-2
-
 menu-1-0 = Cancel
 menu-1-0-foreground = ${colors.accent}
 menu-1-0-exec = menu-open-0
 menu-1-1 = Reboot
 menu-1-1-foreground = ${colors.accent}
 menu-1-1-exec = sudo reboot
-
 menu-2-0 = Power off
 menu-2-0-foreground = ${colors.accent}
 menu-2-0-exec = sudo poweroff
@@ -235,7 +206,6 @@ menu-2-1-exec = menu-open-0
 # type = custom/menu
 # label-open = 
 # label-close = 
-
 # menu-0-0 = Vimperator
 # menu-0-0-exec = web
 # menu-0-1 = Termite
@@ -246,11 +216,8 @@ menu-2-1-exec = menu-open-0
 
 [module/xkeyboard]
 type = internal/xkeyboard
-
 blacklist-0 = num lock
-
 label-layout = %{F#666}%{F#cc} %layout%
-
 label-indicator-padding = 2
 label-indicator-background = ${colors.accent}
 
