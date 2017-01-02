@@ -83,7 +83,7 @@ bindsym XF86AudioMute exec "amixer -q sset Master,0 toggle"
 bindsym XF86Search exec rofi -show run
 
 # take selective screenshot with scrot
-bindsym 107 exec scrot -s
+bindcode 107 exec scrot -s
 
 # focus the parent container
 bindsym $mod+a focus parent
@@ -92,10 +92,10 @@ bindsym $mod+a focus parent
 #bindsym $mod+d focus child
 
 # define variables
-set $workspace1 ""
-set $workspace2 ""
-set $workspace3 ""
-set $workspace4 ""
+# set $workspace1 ""
+# set $workspace2 ""
+# set $workspace3 ""
+# set $workspace4 ""
 
 # switch to workspace
 bindsym $mod+1 workspace 1
