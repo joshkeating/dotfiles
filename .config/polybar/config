@@ -13,7 +13,6 @@ margin-top = 8
 margin-bottom = 8
 
 [bar/Bar]
-
 enable-ipc = true
 monitor = ${env:MONITOR:eDP1}
 bottom = true
