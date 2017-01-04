@@ -25,13 +25,13 @@ alias clch='sudo pacman -Sc'
 alias gst="git status"
 alias status="git status"
 alias adda='git add .'
-alias commit="git commit"
 alias push="git push"
 alias pull="git pull"
 alias merge="git merge"
 # fuck broadcom
 alias rw="sudo netctl restart wlp58s0-University\ of\ Washington"
 alias ranger='ranger --choosedir=$HOME/rangerdir; LASTDIR=`cat $HOME/rangerdir`; cd "$LASTDIR"'
+alias syncsite='aws s3 sync ~/Code/joshuakeating.com_v2 s3://joshuakeating.com --exclude ".git/*" --exclude ".vscode/*" '
 
 # Set ls colors
 LS_COLORS=$LS_COLORS:'di=34:' ; export LS_COLORS
