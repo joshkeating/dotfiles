@@ -32,7 +32,8 @@ alias merge="git merge"
 alias rw="sudo netctl restart wlp58s0-University\ of\ Washington"
 alias ranger='ranger --choosedir=$HOME/rangerdir; LASTDIR=`cat $HOME/rangerdir`; cd "$LASTDIR"'
 alias syncsite='aws s3 sync ~/Code/joshuakeating.com_v2 s3://joshuakeating.com --exclude ".git/*" --exclude ".vscode/*" '
-alias mnt='sudo mount /dev/sdb1 usb'
+alias mnt='sudo ./Scripts/mount-usb-drive.sh'
+alias umnt='sudo ./Scripts/umount-usb-drive.sh'
 
 # Set ls colors
 LS_COLORS=$LS_COLORS:'di=34:' ; export LS_COLORS
