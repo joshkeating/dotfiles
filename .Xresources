@@ -12,7 +12,7 @@ Xft.rgba: rgb
 
 ! special
 *.foreground:   #e6e1dc
-*.background:   #262121
+*.background:   #1e1a1a
 *.cursorColor:  #e6e1dc
 
 ! black
@@ -54,9 +54,9 @@ URxvt.scrollStyle:          rxvt
 URxvt.scrollBar:            false
 URxvt.cursorBlink:          true
 
-! Transparency is kinda nice looking
-URxvt.transparent: true
-URxvt.shading: 30
+! Transparency is kinda nice looking sometimes
+! URxvt.transparent: true
+! URxvt.shading: 30
 
 
 ! ------------------------------------------------------------------------------
