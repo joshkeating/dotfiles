@@ -75,6 +75,7 @@ source $ZSH/oh-my-zsh.sh
 # ssh
 # export SSH_KEY_PATH="~/.ssh/rsa_id"
 
+
 # github ssh
 SSH_ENV=$HOME/.ssh/environment
 
