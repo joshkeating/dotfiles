@@ -1,4 +1,4 @@
-# uses i3lock scrot and imagemagick to display a pixelated screen with a lock icon
+# uses i3lock, scrot, and imagemagick to display a pixelated screen with a lock icon
 # unlocks after password input
 
 scrot /tmp/screen.png
