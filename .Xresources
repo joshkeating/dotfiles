@@ -48,11 +48,14 @@ Xft.rgba: rgb
 *.color15:      #f9f7f3
 
 ! terminal emulator settings
+URxvt*termName: rxvt-unicode-256color
 URxvt.font: xft:Iosevka:regular:size=16
 URxvt.letterSpace: 0
 URxvt.scrollStyle:          rxvt
 URxvt.scrollBar:            false
 URxvt.cursorBlink:          true
+
+
 
 ! Transparency is kinda nice looking sometimes
 ! URxvt.transparent: true

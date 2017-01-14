@@ -23,7 +23,7 @@ nmap <leader>w :w!<cr>
 "enable use of the mouse in vim
 set mouse=a
 
-"display line numbers
+set relativenumber 
 set number
 
 " Set 7 lines to the cursor - when moving vertically using j/k
@@ -84,7 +84,9 @@ set tm=500
 " Enable syntax highlighting
 syntax enable
 
-colorscheme default
+set t_Co=256
+
+colorscheme nova
 set background=dark
 
 " Set extra options when running in GUI mode
