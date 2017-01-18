@@ -57,6 +57,11 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
+# base16 color script
+# BASE16_SHELL=$HOME/.config/base16-shell/
+# [ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)"
+
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -125,3 +130,5 @@ alias ranger='ranger --choosedir=$HOME/rangerdir; LASTDIR=`cat $HOME/rangerdir`;
 alias syncsite='aws s3 sync ~/Code/joshuakeating.com_v2 s3://joshuakeating.com --exclude ".git/*" --exclude ".vscode/*" '
 alias mnt='sudo ./Scripts/mount-usb-drive.sh'
 alias umnt='sudo ./Scripts/umount-usb-drive.sh'
+
+
