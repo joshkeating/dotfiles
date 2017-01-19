@@ -85,6 +85,8 @@ bindsym XF86Search exec rofi -show run
 # take selective screenshot with scrot
 bindcode 107 exec scrot -s
 
+bindcode 73 exec ~/Scripts/lock.sh
+
 # focus the parent container
 bindsym $mod+a focus parent
 
