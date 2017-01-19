@@ -125,11 +125,14 @@ bindsym $mod+Shift+0 move container to workspace 10
 bindsym $mod+Tab workspace next
 bindsym $mod+Shift+Tab workspace prev
 
+# hide window edge borders
+hide_edge_borders horizontal
+
 # colors
 # class			border		background	text
-client.focused		#6D9CBE  	#6D9CBE 	#111111
-client.unfocused	#2c2e2f  	#2c2e2f 	#6D9CBE
-client.focused_inactive	#2c2e2f 	#2c2e2f  	#2c2e2f
+client.focused		#1B2428  	#1B2428 	#111111
+client.unfocused	#2152227a  	#21527a 	#1B2428
+client.focused_inactive	#21527a 	#21527a  	#21527a
 client.urgent		#383a3b 	#383a3b  	#ee0000
 
 # reload the configuration file

@@ -1,8 +1,8 @@
 [colors]
-background = #2c2e2f
-foreground = #eee
+background = #1B2428
+foreground = #eeeeee
 linecolor = #f66
-bordercolor = #6d9cbe
+bordercolor = #42A5F5
 accent = #e60053
 
 [settings]
@@ -59,9 +59,9 @@ label-mode = %mode%
 label-mode-padding = 2
 label-mode-background = #e60053
 label-focused = %index%
-label-focused-foreground = #2c2e2f
-label-focused-background = #6d9cbe
-label-focused-underline = #6d9cbe
+label-focused-foreground = #1B2428
+label-focused-background = #42A5F5
+label-focused-underline = #42A5F5
 label-focused-padding = 4
 label-unfocused = %index%
 label-unfocused-padding = 4
@@ -91,7 +91,7 @@ type = internal/network
 interface = wlp58s0
 interval = 3.0
 format-connected = <ramp-signal> <label-connected>
-label-connected = %{O-6 F#6d9cbe}%{O2 F#6d9cbe}%essid%
+label-connected = %{O-6 F#42A5F5}%{O2 F#42A5F5}%essid%
 label-disconnected = %{F#ff9872}%{F#ff9872} not connected
 label-disconnected-foreground = #66
 ramp-signal-0 = " "
@@ -99,7 +99,7 @@ ramp-signal-1 = " "
 ramp-signal-2 = " "
 ramp-signal-3 = " "
 ramp-signal-4 = " "
-ramp-signal-foreground = #6d9cbe
+ramp-signal-foreground = #42A5F5
 
 
 # [module/wired]
