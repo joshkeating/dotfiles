@@ -31,8 +31,3 @@ set background=dark
 " cursorline highlighting
 set cursorline
 hi CursorLine  cterm=NONE ctermbg=238 ctermfg=NONE
- 
-
-
-
-

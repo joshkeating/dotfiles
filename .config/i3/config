@@ -128,13 +128,13 @@ bindsym $mod+Tab workspace next
 bindsym $mod+Shift+Tab workspace prev
 
 # hide window edge borders
-hide_edge_borders horizontal
+hide_edge_borders smart
 
 # colors
 # class			border		background	text
-client.focused		#1B2428  	#1B2428 	#111111
-client.unfocused	#2152227a  	#21527a 	#1B2428
-client.focused_inactive	#21527a 	#21527a  	#21527a
+client.focused		#42A5F5  	#42A5F5 	#111111
+client.unfocused	#2152227  	#1B2428 	#42A5F5
+client.focused_inactive	#1B2428 	#1B2428  	#1B2428
 client.urgent		#383a3b 	#383a3b  	#ee0000
 
 # reload the configuration file
