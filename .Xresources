@@ -15,9 +15,9 @@ Xft.rgba: rgb
 ! Colors sourced from https://material.io/guidelines/style/color.html#color-color-palette
 
 ! special
-*.foreground:   #EEEEEE
+*.foreground:   #eeeeee
 *.background:   #1B2428
-*.cursorColor:  #EEEEEE
+*.cursorColor:  #eeeeee
 
 ! black 00
 *.color0:       #E53935
