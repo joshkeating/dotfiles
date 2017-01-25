@@ -130,7 +130,7 @@ alias ranger='ranger --choosedir=$HOME/rangerdir; LASTDIR=`cat $HOME/rangerdir`;
 alias syncsite='aws s3 sync ~/Code/joshuakeating.com_v2 s3://joshuakeating.com --exclude ".git/*" --exclude ".vscode/*" '
 alias mnt='sudo ./Scripts/mount-usb-drive.sh'
 alias umnt='sudo ./Scripts/umount-usb-drive.sh'
-alias light='./Scripts/lightbg.sh'
-alias dark='./Scripts/darkbg.sh'
+alias light='~/Scripts/lightbg.sh'
+alias dark='~/Scripts/darkbg.sh'
 
 
