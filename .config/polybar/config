@@ -1,7 +1,7 @@
 [colors]
 background = #1B2428
 foreground = #eeeeee
-linecolor = #f66
+linecolor = #42A5F5
 bordercolor = #42A5F5
 accent = #e60053
 
@@ -9,8 +9,8 @@ accent = #e60053
 screenchange-reload = true
 
 [global/wm]
-margin-top = 8
-margin-bottom = 8
+margin-top = 0
+margin-bottom = 0
 
 [bar/Bar]
 enable-ipc = true
@@ -20,23 +20,23 @@ scroll-up = i3wm-wsnext
 scroll-down = i3wm-wsprev
 border-top = 0
 ;border-top-color = ${colors.bordercolor}
-modules-left = bspwm i3
+modules-left = i3
 ;modules-center = xwindow
 modules-right = fs-root volume wifi battery cpu memory date
-font-0 = SourceSansPro:weight=regular:size=16;0
-font-1 = FontAwesome:size=16;-2
+font-0 = SourceSansPro:weight=regular:size=16;2
+font-1 = FontAwesome:size=16;2
 width = 100%
 height = 36
 background = ${colors.background}
 foreground = ${colors.foreground}
-underline-size = 2
-underline-color = ${colors.linecolor}
-overline-size = 1
-overline-color = ${colors.linecolor}
-border-bottom-color = ${colors.bordercolor}
-spacing = 1
+# underline-size = 2
+# underline-color = ${colors.linecolor}
+# overline-size = 1
+# overline-color = ${colors.linecolor}
+# border-bottom-color = ${colors.bordercolor}
+spacing = 0
 padding-left = 0
-padding-right = 2
+padding-right = 0
 module-margin-left = 1
 module-margin-right = 2
 tray-position = none
@@ -173,32 +173,32 @@ animation-charging-framerate = 750
 
 
 
-[module/power-menu]
-type = custom/menu
-label-open = 
-label-close = 
-label-separator = /
-menu-0-0 = Terminate WM
-menu-0-0-foreground = ${colors.accent}
-menu-0-0-exec = bspc quit -1
-menu-0-1 = Reboot
-menu-0-1-foreground = ${colors.accent}
-menu-0-1-exec = menu-open-1
-menu-0-2 = Power off
-menu-0-2-foreground = ${colors.accent}
-menu-0-2-exec = menu-open-2
-menu-1-0 = Cancel
-menu-1-0-foreground = ${colors.accent}
-menu-1-0-exec = menu-open-0
-menu-1-1 = Reboot
-menu-1-1-foreground = ${colors.accent}
-menu-1-1-exec = sudo reboot
-menu-2-0 = Power off
-menu-2-0-foreground = ${colors.accent}
-menu-2-0-exec = sudo poweroff
-menu-2-1 = Cancel
-menu-2-1-foreground = ${colors.accent}
-menu-2-1-exec = menu-open-0
+# [module/power-menu]
+# type = custom/menu
+# label-open = 
+# label-close = 
+# label-separator = /
+# menu-0-0 = Terminate WM
+# menu-0-0-foreground = ${colors.accent}
+# menu-0-0-exec = bspc quit -1
+# menu-0-1 = Reboot
+# menu-0-1-foreground = ${colors.accent}
+# menu-0-1-exec = menu-open-1
+# menu-0-2 = Power off
+# menu-0-2-foreground = ${colors.accent}
+# menu-0-2-exec = menu-open-2
+# menu-1-0 = Cancel
+# menu-1-0-foreground = ${colors.accent}
+# menu-1-0-exec = menu-open-0
+# menu-1-1 = Reboot
+# menu-1-1-foreground = ${colors.accent}
+# menu-1-1-exec = sudo reboot
+# menu-2-0 = Power off
+# menu-2-0-foreground = ${colors.accent}
+# menu-2-0-exec = sudo poweroff
+# menu-2-1 = Cancel
+# menu-2-1-foreground = ${colors.accent}
+# menu-2-1-exec = menu-open-0
 
 
 # [module/app-menu]
