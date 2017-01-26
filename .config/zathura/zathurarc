@@ -1,0 +1,3 @@
+set font "monospace normal 18"
+
+set selection-clipboard clipboard
