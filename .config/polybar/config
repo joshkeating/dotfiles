@@ -9,8 +9,8 @@ accent = #e60053
 screenchange-reload = true
 
 [global/wm]
-margin-top = 0
-margin-bottom = 0
+margin-top = 8
+margin-bottom = 8
 
 [bar/Bar]
 enable-ipc = true
@@ -18,34 +18,27 @@ monitor = ${env:MONITOR:eDP1}
 bottom = true
 scroll-up = i3wm-wsnext
 scroll-down = i3wm-wsprev
-border-top = 0
-;border-top-color = ${colors.bordercolor}
 modules-left = i3
-;modules-center = xwindow
-modules-right = fs-root volume wifi battery cpu memory date
+# modules-center = 
+modules-right = volume wifi battery cpu memory date
 font-0 = SourceSansPro:weight=regular:size=16;2
-font-1 = FontAwesome:size=16;2
+font-1 = FontAwesome:size=14;3
 width = 100%
 height = 36
 background = ${colors.background}
 foreground = ${colors.foreground}
-# underline-size = 2
-# underline-color = ${colors.linecolor}
-# overline-size = 1
-# overline-color = ${colors.linecolor}
-# border-bottom-color = ${colors.bordercolor}
+underline-size = 2
+border-bottom-color = ${colors.bordercolor}
 spacing = 0
-padding-left = 0
-padding-right = 0
-module-margin-left = 1
-module-margin-right = 2
+padding-right = 3
+module-margin = 2
 tray-position = none
 
 
-[module/fs-root]
-type = internal/fs
-mount-0 = /
-label-mounted = %{F#cecece}%free%%{F-}
+# [module/fs-root]
+# type = internal/fs
+# mount-0 = /
+# label-mounted = %{F#cecece}%free%%{F-}
 
 
 [module/i3]
@@ -54,16 +47,25 @@ index-sort = true
 pin-workspaces = true
 enable-click = true
 enable-scroll = true
+
+ws-icon-0 = 1;
+ws-icon-1 = 2;
+ws-icon-2 = 3;
+ws-icon-3 = 4;
+ws-icon-4 = 5;
+ws-icon-5 = 6;
+
+
 format = <label-state> <label-mode>
 label-mode = %mode%
 label-mode-padding = 2
 label-mode-background = #e60053
-label-focused = %index%
-label-focused-foreground = #1B2428
-label-focused-background = #42A5F5
+label-focused = %icon%
+label-focused-foreground = #42A5F5
 label-focused-underline = #42A5F5
+label-focused-background = #1B2428
 label-focused-padding = 4
-label-unfocused = %index%
+label-unfocused = %icon%
 label-unfocused-padding = 4
 label-visible = %index%
 label-visible-underline = #555555
@@ -77,54 +79,33 @@ label-urgent-padding = 4
 [module/cpu]
 type = internal/cpu
 interval = 5
-label = %{F#cecece} %{F#cecece} %percentage%
+label = %{F#cecece} %{F#cecece} %percentage%
+format-underline = #8D6E63
 
 
 [module/memory]
 type = internal/memory
 interval = 5
 label = %{F#cecece} %{F#cecece} %percentage_used%
+format-underline = #8D6E63
 
 
 [module/wifi]
 type = internal/network
 interface = wlp58s0
 interval = 3.0
-format-connected = <ramp-signal> <label-connected>
-label-connected = %{O-6 F#42A5F5}%{O2 F#42A5F5}%essid%
-label-disconnected = %{F#ff9872}%{F#ff9872} not connected
-label-disconnected-foreground = #66
-ramp-signal-0 = " "
-ramp-signal-1 = " "
-ramp-signal-2 = " "
-ramp-signal-3 = " "
-ramp-signal-4 = " "
-ramp-signal-foreground = #42A5F5
-
-
-# [module/wired]
-# type = internal/network
-# interface = net0
-# interval = 3.0
-# label-connected = %{T3}%local_ip%%{T-}
-# label-disconnected = %{T3}Not connected%{T-}
-# label-disconnected-foreground = #66
+format-connected = <label-connected>
+label-connected =  %essid%
+label-disconnected = %{F#E53935} %{F#E53935} not connected
+format-disconnected-underline = #E53935
+format-connected-underline = #42A5F5
 
 
 [module/date]
 type = internal/date
-date = %%{F#cecece}%{F#cecece} %b %d  %%{F#cecece}%%{F#cecece} %l:%M
+date = %{F#cecece} %b %d %l:%M
 interval = 5
-
-
-# [module/xbacklight]
-# type = internal/xbacklight
-# format = <ramp> <label>
-# ramp-0 = 
-# ramp-1 = 
-# ramp-2 = 
-# ramp-foreground = #666
-# label-foreground = ${root.foreground}
+format-underline = #E53935
 
 
 [module/volume]
@@ -133,19 +114,13 @@ mapped = true
 speaker-mixer = Speaker
 headphone-mixer = Headphone
 headphone-id = 9
-format-volume = <ramp-volume> <label-volume>
-label-volume = %{F#cecece}%percentage%
-label-volume-foreground = ${root.foreground}
+format-volume = <label-volume>
+label-volume = %{F#cecece} %{F#cecece}%percentage%
 format-muted-prefix = " "
 format-muted-foreground = #666
 label-muted = sound muted
-ramp-volume-0 = " "
-ramp-volume-1 = " "
-ramp-volume-2 = " "
-ramp-volume-3 = " "
-ramp-volume-foreground = #cecece
-ramp-headphones-0 = ""
-ramp-headphones-1 = ""
+format-volume-underline = #7E57C2
+format-muted-underline = #666
 
 
 [module/battery]
@@ -154,82 +129,20 @@ battery = BAT0
 adapter = AC
 full-at = 100
 time-format = %H:%M
-format-charging = <animation-charging> <label-charging>
+format-charging = <label-charging>
 label-charging = %{F#cecece}%percentage%
 format-discharging = <ramp-capacity> <label-discharging>
 label-discharging = %{F#cecece}%percentage%
 format-full = <label-full>
 format-full-prefix = " "
-format-full-prefix-foreground = #cecece
 ramp-capacity-0 = " "
 ramp-capacity-1 = " "
 ramp-capacity-2 = " "
 ramp-capacity-foreground = #cecece
-animation-charging-0 = " "
-animation-charging-1 = " "
-animation-charging-2 = " "
-animation-charging-foreground = #cecece
-animation-charging-framerate = 750
+prefix-charging = " "
+format-discharging-underline = #009688
+format-charging-underline = #8BC34A
+format-full-underline = #8BC34A
 
-
-
-# [module/power-menu]
-# type = custom/menu
-# label-open = 
-# label-close = 
-# label-separator = /
-# menu-0-0 = Terminate WM
-# menu-0-0-foreground = ${colors.accent}
-# menu-0-0-exec = bspc quit -1
-# menu-0-1 = Reboot
-# menu-0-1-foreground = ${colors.accent}
-# menu-0-1-exec = menu-open-1
-# menu-0-2 = Power off
-# menu-0-2-foreground = ${colors.accent}
-# menu-0-2-exec = menu-open-2
-# menu-1-0 = Cancel
-# menu-1-0-foreground = ${colors.accent}
-# menu-1-0-exec = menu-open-0
-# menu-1-1 = Reboot
-# menu-1-1-foreground = ${colors.accent}
-# menu-1-1-exec = sudo reboot
-# menu-2-0 = Power off
-# menu-2-0-foreground = ${colors.accent}
-# menu-2-0-exec = sudo poweroff
-# menu-2-1 = Cancel
-# menu-2-1-foreground = ${colors.accent}
-# menu-2-1-exec = menu-open-0
-
-
-# [module/app-menu]
-# type = custom/menu
-# label-open = 
-# label-close = 
-# menu-0-0 = Vimperator
-# menu-0-0-exec = web
-# menu-0-1 = Termite
-# menu-0-1-exec = termite
-# menu-0-2 = Pcmanfm
-# menu-0-2-exec = pcmanfm
-
-
-[module/xkeyboard]
-type = internal/xkeyboard
-blacklist-0 = num lock
-label-layout = %{F#666}%{F#cc} %layout%
-label-indicator-padding = 2
-label-indicator-background = ${colors.accent}
-
-
-[module/xwindow]
-type = internal/xwindow
-format = <label>
-label-maxlen = 75
-
-
-[module/counter]
-type = internal/counter
-format = <counter>
-interval = 0.1
 
 ; vim:ft=dosini
