@@ -8,9 +8,10 @@ accent = #e60053
 [settings]
 screenchange-reload = true
 
+
 [global/wm]
-margin-top = 8
-margin-bottom = 8
+# global options
+
 
 [bar/Bar]
 enable-ipc = true
@@ -21,10 +22,10 @@ scroll-down = i3wm-wsprev
 modules-left = i3
 # modules-center = 
 modules-right = volume wifi battery cpu memory date
-font-0 = SourceSansPro:weight=regular:size=16;2
-font-1 = FontAwesome:size=14;3
+font-0 = SourceSansPro:weight=regular:size=14;2
+font-1 = FontAwesome:size=12;2
 width = 100%
-height = 36
+height = 32
 background = ${colors.background}
 foreground = ${colors.foreground}
 underline-size = 2
@@ -38,7 +39,7 @@ tray-position = none
 # [module/fs-root]
 # type = internal/fs
 # mount-0 = /
-# label-mounted = %{F#cecece}%free%%{F-}
+# label-mounted = %{F#eeeeee}%free%%{F-}
 
 
 [module/i3]
@@ -47,25 +48,23 @@ index-sort = true
 pin-workspaces = true
 enable-click = true
 enable-scroll = true
-
+# change label-focused and label-unfocused to icon to enable
 ws-icon-0 = 1;
 ws-icon-1 = 2;
 ws-icon-2 = 3;
 ws-icon-3 = 4;
 ws-icon-4 = 5;
 ws-icon-5 = 6;
-
-
 format = <label-state> <label-mode>
 label-mode = %mode%
 label-mode-padding = 2
 label-mode-background = #e60053
-label-focused = %icon%
+label-focused = %index%
 label-focused-foreground = #42A5F5
 label-focused-underline = #42A5F5
 label-focused-background = #1B2428
 label-focused-padding = 4
-label-unfocused = %icon%
+label-unfocused = %index%
 label-unfocused-padding = 4
 label-visible = %index%
 label-visible-underline = #555555
@@ -79,14 +78,14 @@ label-urgent-padding = 4
 [module/cpu]
 type = internal/cpu
 interval = 5
-label = %{F#cecece} %{F#cecece} %percentage%
+label = %{F#eeeeee} %{F#eeeeee} %percentage%
 format-underline = #8D6E63
 
 
 [module/memory]
 type = internal/memory
 interval = 5
-label = %{F#cecece} %{F#cecece} %percentage_used%
+label = %{F#eeeeee} %{F#eeeeee} %percentage_used%
 format-underline = #8D6E63
 
 
@@ -103,7 +102,7 @@ format-connected-underline = #42A5F5
 
 [module/date]
 type = internal/date
-date = %{F#cecece} %b %d %l:%M
+date = %{F#eeeeee} %b %d %l:%M
 interval = 5
 format-underline = #E53935
 
@@ -115,7 +114,7 @@ speaker-mixer = Speaker
 headphone-mixer = Headphone
 headphone-id = 9
 format-volume = <label-volume>
-label-volume = %{F#cecece} %{F#cecece}%percentage%
+label-volume = %{F#eeeeee} %{F#eeeeee}%percentage%
 format-muted-prefix = " "
 format-muted-foreground = #666
 label-muted = sound muted
@@ -130,19 +129,27 @@ adapter = AC
 full-at = 100
 time-format = %H:%M
 format-charging = <label-charging>
-label-charging = %{F#cecece}%percentage%
+label-charging = %{F#eeeeee}%percentage%
 format-discharging = <ramp-capacity> <label-discharging>
-label-discharging = %{F#cecece}%percentage%
+label-discharging = %{F#eeeeee}%percentage%
 format-full = <label-full>
 format-full-prefix = " "
 ramp-capacity-0 = " "
 ramp-capacity-1 = " "
 ramp-capacity-2 = " "
-ramp-capacity-foreground = #cecece
+ramp-capacity-foreground = #eeeeee
 prefix-charging = " "
 format-discharging-underline = #009688
 format-charging-underline = #8BC34A
 format-full-underline = #8BC34A
 
+
+# [module/xwindow]
+# type = internal/xwindow
+# format-background = #f00
+# format-foreground = #000
+# format-padding = 4
+# label = %title%
+# label-maxlen = 50
 
 ; vim:ft=dosini
