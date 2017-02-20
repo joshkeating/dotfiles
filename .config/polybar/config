@@ -15,6 +15,9 @@ screenchange-reload = true
 
 [bar/Bar]
 enable-ipc = true
+
+# monitor = ${env:MONITOR}
+
 monitor = ${env:MONITOR:eDP1}
 bottom = true
 scroll-up = i3wm-wsnext
