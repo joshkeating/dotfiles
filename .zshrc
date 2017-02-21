@@ -132,5 +132,6 @@ alias mnt='sudo ./Scripts/mount-usb-drive.sh'
 alias umnt='sudo ./Scripts/umount-usb-drive.sh'
 alias light='~/Scripts/lightbg.sh'
 alias dark='~/Scripts/darkbg.sh'
-
+alias cmon='~/Scripts/connect-monitor.sh'
+alias dmon='~/Scripts/disconnect-monitor.sh'
 
