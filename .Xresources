@@ -2,7 +2,7 @@
 
 ! Display settings
 
-Xft.dpi: 96
+Xft.dpi: 116
 Xft.autohint: false
 Xft.lcdfilter:  lcddefault
 Xft.hintstyle:  hintslight
@@ -64,7 +64,7 @@ Xft.rgba: rgb
 
 ! terminal emulator settings
 URxvt*termName: rxvt-unicode-256color
-URxvt.font: xft:Iosevka:regular:size=16
+URxvt.font: xft:Iosevka:regular:size=13
 URxvt.letterSpace: 0
 URxvt.scrollStyle:          rxvt
 URxvt.scrollBar:            false
