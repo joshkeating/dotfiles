@@ -32,4 +32,4 @@ set background=dark
 set cursorline
 hi CursorLine  cterm=NONE ctermbg=238 ctermfg=NONE
 
-set clipboard=unnamedplus
+
