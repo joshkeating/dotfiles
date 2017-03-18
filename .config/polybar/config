@@ -24,7 +24,7 @@ scroll-up = i3wm-wsnext
 scroll-down = i3wm-wsprev
 modules-left = i3
 # modules-center = 
-modules-right = volume wifi battery cpu memory date
+modules-right = nowplaying volume wifi battery cpu memory date
 font-0 = SourceSansPro:weight=regular:size=16;2
 font-1 = FontAwesome:size=14;3
 width = 100%
@@ -149,7 +149,8 @@ prefix-charging = " "
 [module/nowplaying]
 type = custom/script
 interval = 5
-
+format = <label>
+format-prefix = "  "
 exec = ~/Scripts/read-json-gpmdp.py
 
 
