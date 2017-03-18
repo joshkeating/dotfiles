@@ -146,6 +146,12 @@ prefix-charging = " "
 # format-charging-underline = #8BC34A
 # format-full-underline = #8BC34A
 
+[module/nowplaying]
+type = custom/script
+interval = 5
+
+exec = ~/Scripts/read-json-gpmdp.py
+
 
 # [module/xwindow]
 # type = internal/xwindow
