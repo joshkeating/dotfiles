@@ -6,11 +6,16 @@ with open("/home/josh/.config/Google Play Music Desktop Player/json_store/playba
     data = json.load(data_file)
 
 is_playing = data["playing"]
-
-
 artist_name = data["song"]["artist"]
 song_title = data["song"]["title"]
-print(artist_name, "-" ,song_title)
+# print(is_playing)
+
+if is_playing == False:
+    print("")
+else:
+    print(artist_name, "-" ,song_title)
+
+
 
 
 
