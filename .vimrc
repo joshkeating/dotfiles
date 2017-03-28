@@ -9,7 +9,7 @@
 set mouse=a
 
 "turn on realtive numbers
-set relativenumber
+"set relativenumber
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

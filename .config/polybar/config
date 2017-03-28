@@ -25,10 +25,10 @@ scroll-down = i3wm-wsprev
 modules-left = i3
 # modules-center = 
 modules-right = volume wifi battery cpu memory date
-font-0 = SourceSansPro:weight=regular:size=16;2
-font-1 = FontAwesome:size=14;3
+font-0 = SourceSansPro:weight=regular:size=14;0
+font-1 = FontAwesome:size=14;0
 width = 100%
-height = 32
+height = 28
 background = ${colors.background}
 foreground = ${colors.foreground}
 underline-size = 2
@@ -66,22 +66,22 @@ label-focused = %index%
 label-focused-foreground = #1B2428
 # label-focused-underline = #42A5F5
 label-focused-background = #42A5F5
-label-focused-padding = 4
+label-focused-padding = 2
 label-unfocused = %index%
-label-unfocused-padding = 4
+label-unfocused-padding = 2
 label-visible = %index%
 label-visible-underline = #555555
-label-visible-padding = 4
+label-visible-padding = 2
 label-urgent = %index%
 label-urgent-foreground = #000000
 label-urgent-background = #bd2c40
-label-urgent-padding = 4
+label-urgent-padding = 2
 
 
 [module/cpu]
 type = internal/cpu
 interval = 5
-label = %{F#eeeeee} %{F#eeeeee} %percentage%
+label = %{F#eeeeee} %{F#eeeeee} %percentage%
 # format-underline = #8D6E63
 
 
