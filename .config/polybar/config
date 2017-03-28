@@ -35,7 +35,7 @@ underline-size = 2
 border-bottom-color = ${colors.bordercolor}
 spacing = 0
 padding-right = 3
-module-margin = 2
+module-margin = 1
 tray-position = none
 
 
