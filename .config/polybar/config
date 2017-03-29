@@ -81,14 +81,14 @@ label-urgent-padding = 2
 [module/cpu]
 type = internal/cpu
 interval = 5
-label = %{F#eeeeee} %{F#eeeeee} %percentage%
+label = %{F#eeeeee}%{F#eeeeee} %percentage%
 # format-underline = #8D6E63
 
 
 [module/memory]
 type = internal/memory
 interval = 5
-label = %{F#eeeeee} %{F#eeeeee} %percentage_used%
+label = %{F#eeeeee}%{F#eeeeee} %percentage_used%
 # format-underline = #8D6E63
 
 
@@ -140,7 +140,7 @@ battery = BAT0
 adapter = AC
 full-at = 100
 time-format = %H:%M
-format-charging = <label-charging>
+format-charging = <animation-charging> <label-charging>
 label-charging = %{F#eeeeee}%percentage%
 format-discharging = <ramp-capacity> <label-discharging>
 label-discharging = %{F#eeeeee}%percentage%
@@ -151,6 +151,8 @@ ramp-capacity-1 = " "
 ramp-capacity-2 = " "
 ramp-capacity-foreground = #eeeeee
 prefix-charging = " "
+animation-charging-0 = ""
+animation-charging-1 = ""
 # format-discharging-underline = #009688
 # format-charging-underline = #8BC34A
 # format-full-underline = #8BC34A
