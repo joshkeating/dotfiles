@@ -110,19 +110,28 @@ interval = 5
 # format-underline = #E53935
 
 
+# [module/volume]
+# type = internal/volume
+# speaker-mixer = Speaker
+# headphone-mixer = Headphone
+# headphone-id = 9
+# format-volume = <label-volume>
+# label-volume = %{F#eeeeee} %{F#eeeeee}%percentage%
+# #format-muted-prefix = " "
+# format-muted-foreground = #ffca28
+# label-muted = sound muted
+# # format-volume-underline = #7E57C2
+# # format-muted-underline = #666
+
 [module/volume]
 type = internal/volume
-mapped = true
+master-soundcard = default
+speaker-soundcard = default
+headphone-soundcard = default
+master-mixer = Master
 speaker-mixer = Speaker
 headphone-mixer = Headphone
-headphone-id = 9
-format-volume = <label-volume>
-label-volume = %{F#eeeeee} %{F#eeeeee}%percentage%
-#format-muted-prefix = " "
-format-muted-foreground = #ffca28
-label-muted = sound muted
-# format-volume-underline = #7E57C2
-# format-muted-underline = #666
+mapping = true
 
 
 [module/battery]
