@@ -135,3 +135,4 @@ alias dark='~/Scripts/darkbg.sh'
 alias cmon='~/Scripts/connect-monitor.sh'
 alias dmon='~/Scripts/disconnect-monitor.sh'
 #alias cat=ccat
+alias logout='killall -u josh'

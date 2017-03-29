@@ -26,7 +26,7 @@ modules-left = i3
 # modules-center = 
 modules-right = volume wifi battery cpu memory date
 font-0 = SourceSansPro:weight=regular:size=14;0
-font-1 = FontAwesome:size=14;0
+font-1 = FontAwesome:size=14;-2
 width = 100%
 height = 28
 background = ${colors.background}
@@ -34,8 +34,8 @@ foreground = ${colors.foreground}
 underline-size = 2
 border-bottom-color = ${colors.bordercolor}
 spacing = 0
-padding-right = 3
-module-margin = 1
+padding-right = 2
+module-margin = 2
 tray-position = none
 
 
@@ -60,22 +60,22 @@ ws-icon-4 = 5;
 ws-icon-5 = 6;
 format = <label-state> <label-mode>
 label-mode = %mode%
-label-mode-padding = 2
+label-mode-padding = 3
 label-mode-background = #e60053
 label-focused = %index%
 label-focused-foreground = #1B2428
 # label-focused-underline = #42A5F5
 label-focused-background = #42A5F5
-label-focused-padding = 2
+label-focused-padding = 3
 label-unfocused = %index%
-label-unfocused-padding = 2
+label-unfocused-padding = 3
 label-visible = %index%
 label-visible-underline = #555555
-label-visible-padding = 2
+label-visible-padding = 3
 label-urgent = %index%
 label-urgent-foreground = #000000
 label-urgent-background = #bd2c40
-label-urgent-padding = 2
+label-urgent-padding = 3
 
 
 [module/cpu]
