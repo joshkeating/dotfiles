@@ -41,9 +41,9 @@ Xft.rgba: rgb
 *.color11:     #8BC34A
 
 ! grey 04
-*.color4:       #42A5F5
+*.color4:       #1976D2
 ! blue 0C
-*.color12:     #42A5F5
+*.color12:     #1976D2
 
 ! light-grey 05
 *.color5:       #009688
@@ -86,7 +86,8 @@ rofi.padding: 16
 rofi.lines: 10
 rofi.bw: 3
 rofi.color-enabled: true
-rofi.color-window: #1B2428, #42A5F5, #1B2428
-rofi.color-normal: #1B2428, #42A5F5, #1B2428, #42A5F5, #1B2428
-rofi.color-active: #1B2428, #42A5F5, #1B2428, #42A5F5, #1B2428
-rofi.color-urgent: #1B2428, #42A5F5, #1B2428, #42A5F5, #1B2428
+rofi.color-window: #1B2428, #1976D2, #1B2428
+rofi.color-normal: #1B2428, #1976D2, #1B2428, #1976D2, #1B2428
+rofi.color-active: #1B2428, #1976D2, #1B2428, #1976D2, #1B2428
+rofi.color-urgent: #1B2428, #1976D2, #1B2428, #1976D2, #1B2428
+
