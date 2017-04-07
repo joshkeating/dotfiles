@@ -15,52 +15,50 @@ Xft.rgba: rgb
 
 ! Colors sourced from https://material.io/guidelines/style/color.html#color-color-palette
 
-! special
+! foreground / background
 *.foreground:   #eeeeee
 *.background:   #1B2428
 *.cursorColor:  #eeeeee
 
-! black 00
-*.color0:       #E53935
-! red 08
-*.color8:       #E53935
+! dark black 00
+*.color0:       #455A64
+! black 08
+*.color8:       #78909C
 
-! black-grey 01
-*.color1:       #F4511E
-! orange 09
-*.color9:       #F4511E
+! dark red 01
+*.color1:       #D32F2F
+! red
+*.color9:       #F44336
 
-! black-grey 02
-*.color2:       #FFCA28
-! yellow 0A
-*.color10:      #FFCA28
+! dark green 02
+*.color2:       #4CAF50
+! green
+*.color10:      #81C784
 
-! black-grey 03
-*.color3:       #8BC34A
-! green 0B
-*.color11:     #8BC34A
+! dark yellow 03
+*.color3:       #FBC02D
+! yellow
+*.color11:     #FFEB3B
 
-! grey 04
+! dark blue
 *.color4:       #1976D2
-! blue 0C
-*.color12:     #1976D2
+! blue
+*.color12:     #2196F3
 
-! light-grey 05
-*.color5:       #009688
-! teal 0D
-*.color13:      #009688
+! dark purple 05
+*.color5:       #9575CD
+! purple
+*.color13:      #B39DDB
 
-! light-grey 06
-*.color6:       #7E57C2
-! purple 0E
-*.color14:      #7E57C2
+! dark teal 06
+*.color6:       #00897B
+! teal
+*.color14:      #4DB6AC
 
-! white 07
-*.color7:       #8D6E63
-! brown 0F
-*.color15:      #8D6E63
-
-
+! dark white 07
+*.color7:       #BDBDBD
+! white 0F
+*.color15:      #EEEEEE
 
 
 ! terminal emulator settings
@@ -72,8 +70,7 @@ URxvt.scrollBar:            false
 URxvt.cursorBlink:          true
 
 
-
-! Transparency is kinda nice looking sometimes
+! Transparency settings
 ! URxvt.transparent: true
 ! URxvt.shading: 30
 
@@ -86,8 +83,8 @@ rofi.padding: 16
 rofi.lines: 10
 rofi.bw: 3
 rofi.color-enabled: true
-rofi.color-window: #1B2428, #1976D2, #1B2428
-rofi.color-normal: #1B2428, #1976D2, #1B2428, #1976D2, #1B2428
-rofi.color-active: #1B2428, #1976D2, #1B2428, #1976D2, #1B2428
-rofi.color-urgent: #1B2428, #1976D2, #1B2428, #1976D2, #1B2428
+rofi.color-window: #1B2428, #2196F3, #1B2428
+rofi.color-normal: #1B2428, #2196F3, #1B2428, #2196F3, #1B2428
+rofi.color-active: #1B2428, #2196F3, #1B2428, #2196F3, #1B2428
+rofi.color-urgent: #1B2428, #2196F3, #1B2428, #2196F3, #1B2428
 

@@ -1,8 +1,8 @@
 [colors]
 background = #1B2428
 foreground = #eeeeee
-linecolor = #42A5F5
-bordercolor = #42A5F5
+linecolor = #2196F3
+bordercolor = #2196F3
 accent = #e60053
 
 [settings]
@@ -64,8 +64,8 @@ label-mode-padding = 3
 label-mode-background = #e60053
 label-focused = %index%
 label-focused-foreground = #1B2428
-# label-focused-underline = #42A5F5
-label-focused-background = #42A5F5
+# label-focused-underline = #2196F3
+label-focused-background = #2196F3
 label-focused-padding = 3
 label-unfocused = %index%
 label-unfocused-padding = 3
@@ -97,10 +97,10 @@ type = internal/network
 interface = wlp58s0
 interval = 3.0
 format-connected = <label-connected>
-label-connected = %{F#42A5F5} %essid%
+label-connected = %{F#2196F3} %essid%
 label-disconnected = %{F#E53935} %{F#E53935} not connected
 # format-disconnected-underline = #E53935
-# format-connected-underline = #42A5F5
+# format-connected-underline = #2196F3
 
 
 [module/date]
