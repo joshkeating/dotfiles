@@ -24,7 +24,7 @@ scroll-up = i3wm-wsnext
 scroll-down = i3wm-wsprev
 modules-left = i3
 # modules-center = 
-modules-right = volume wifi battery cpu memory date
+modules-right = volume wifi backlight battery cpu memory date
 font-0 = SourceSansPro:weight=regular:size=14;0
 font-1 = FontAwesome:size=14;-2
 width = 100%
@@ -105,7 +105,7 @@ label-disconnected = %{F#E53935} %{F#E53935} not connected
 
 [module/date]
 type = internal/date
-date = %{F#eeeeee} %b %d %l:%M
+date = %{F#eeeeee} %{F#eeeeee} %l:%M
 interval = 5
 # format-underline = #E53935
 
@@ -163,6 +163,32 @@ interval = 5
 format = <label>
 format-prefix = "  "
 exec = ~/Scripts/read-json-gpmdp.py
+
+[module/backlight]
+type = internal/xbacklight
+
+# Create scroll handlers used to set the backlight value
+# Default: true
+enable-scroll = true
+; Available tags:
+;   <label> (default)
+;   <ramp>
+;   <bar>
+format = <label> <ramp>
+; Available tokens:
+;   %percentage% (default)
+label =  %percentage%
+; Only applies if <ramp> is used
+ramp-0 = 🌕
+ramp-1 = 🌔
+ramp-2 = 🌓
+ramp-3 = 🌒
+ramp-4 = 🌑
+; Only applies if <bar> is used
+bar-width = 10
+bar-indicator = |
+bar-fill = ─
+bar-empty = ─
 
 
 # [module/xwindow]
