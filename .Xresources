@@ -64,7 +64,7 @@ Xft.rgba: rgb
 ! terminal emulator settings
 URxvt*termName: rxvt-unicode-256color
 URxvt.font: xft:Inconsolata for Powerline:regular:size=16
-URxvt.letterSpace: 0
+URxvt.letterSpace: -0.4
 URxvt.scrollStyle:          rxvt
 URxvt.scrollBar:            false
 URxvt.cursorBlink:          true
