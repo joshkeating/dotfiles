@@ -24,7 +24,7 @@ scroll-up = i3wm-wsnext
 scroll-down = i3wm-wsprev
 modules-left = i3
 # modules-center = 
-modules-right = volume wifi backlight battery cpu memory date
+modules-right = wifi volume backlight battery cpu memory date
 font-0 = SourceSansPro:weight=regular:size=14;0
 font-1 = FontAwesome:size=14;-2
 width = 100%
@@ -110,28 +110,16 @@ interval = 5
 # format-underline = #E53935
 
 
-# [module/volume]
-# type = internal/volume
-# speaker-mixer = Speaker
-# headphone-mixer = Headphone
-# headphone-id = 9
-# format-volume = <label-volume>
-# label-volume = %{F#eeeeee} %{F#eeeeee}%percentage%
-# #format-muted-prefix = " "
-# format-muted-foreground = #ffca28
-# label-muted = sound muted
-# # format-volume-underline = #7E57C2
-# # format-muted-underline = #666
-
 [module/volume]
 type = internal/volume
-master-soundcard = default
-speaker-soundcard = default
-headphone-soundcard = default
 master-mixer = Master
-speaker-mixer = Speaker
-headphone-mixer = Headphone
-mapping = true
+headphone-id = 9
+format-volume = <label-volume>
+label-volume = %{F#eeeeee} %{F#eeeeee}%percentage%
+format-muted-foreground = #ffca28
+label-muted = sound muted
+# format-volume-underline = #7E57C2
+# format-muted-underline = #666
 
 
 [module/battery]

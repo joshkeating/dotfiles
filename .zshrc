@@ -108,7 +108,7 @@ SSH_ENV=$HOME/.ssh/environment
 alias ls='ls -l --color=auto'
 alias colors='./Scripts/colors.sh'
 alias stats='screenfetch'
-alias lock='/home/josh/Scripts/lock.sh'
+alias lock='gnome-screensaver-command -l'
 alias run='rofi -show run'
 alias pipes='./Scripts/pipes.sh'
 alias shutdown='sudo shutdown now'
@@ -132,3 +132,4 @@ alias cmon='~/Scripts/connect-monitor.sh'
 alias dmon='~/Scripts/disconnect-monitor.sh'
 #alias cat=ccat
 alias logout='killall -u josh'
+alias am='alsamixer'
