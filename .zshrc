@@ -71,7 +71,6 @@ export EDITOR='vim'
 # ssh
 # export SSH_KEY_PATH="~/.ssh/rsa_id"
 SSH_ENV=$HOME/.ssh/environment
-ssh-add ~/.ssh/id_rsa &>/dev/null
 
 # start the ssh-agent
 
@@ -125,7 +124,7 @@ alias light='~/Scripts/lightbg.sh'
 alias dark='~/Scripts/darkbg.sh'
 alias cmon='~/Scripts/connect-monitor.sh'
 alias dmon='~/Scripts/disconnect-monitor.sh'
-alias cat=ccat
+# alias cat=ccat
 alias logout='killall -u josh'
 alias am='alsamixer'
 
