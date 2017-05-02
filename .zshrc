@@ -70,8 +70,8 @@ export EDITOR='vim'
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/rsa_id"
-
 SSH_ENV=$HOME/.ssh/environment
+ssh-add ~/.ssh/id_rsa &>/dev/null
 
 # start the ssh-agent
 
