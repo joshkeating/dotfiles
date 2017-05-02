@@ -96,17 +96,12 @@ SSH_ENV=$HOME/.ssh/environment
 #     start_agent;
 # fi
 
+# set path for golang (for termial execution)
 GOPATH=$HOME/Code
 
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+# plugins, and themes. 
 
 alias ls='ls -l --color=auto'
 alias colors='./Scripts/colors.sh'
@@ -116,15 +111,12 @@ alias run='rofi -show run'
 alias pipes='./Scripts/pipes.sh'
 alias shutdown='sudo shutdown now'
 alias reboot='sudo reboot now'
-alias wi='sudo wifi-menu'
-alias clch='sudo pacman -Sc'
 alias gst="git status"
 alias status="git status"
 alias adda='git add .'
 alias push="git push"
 alias pull="git pull"
 alias merge="git merge"
-alias rw="sudo netctl restart wlp58s0-University\ of\ Washington"
 alias ranger='ranger --choosedir=$HOME/rangerdir; LASTDIR=`cat $HOME/rangerdir`; cd "$LASTDIR"'
 alias syncsite='aws s3 sync ~/Code/joshuakeating.com_v2 s3://joshuakeating.com --exclude ".git/*" --exclude ".vscode/*" '
 alias mnt='sudo ./Scripts/mount-usb-drive.sh'
@@ -133,6 +125,12 @@ alias light='~/Scripts/lightbg.sh'
 alias dark='~/Scripts/darkbg.sh'
 alias cmon='~/Scripts/connect-monitor.sh'
 alias dmon='~/Scripts/disconnect-monitor.sh'
-#alias cat=ccat
+alias cat=ccat
 alias logout='killall -u josh'
 alias am='alsamixer'
+
+# Deprecated aliases (Arch Linux)
+
+# alias clch='sudo pacman -Sc'
+# alias wi='sudo wifi-menu'
+# alias rw="sudo netctl restart wlp58s0-University\ of\ Washington"
