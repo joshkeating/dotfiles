@@ -133,3 +133,4 @@ alias am='alsamixer'
 # alias clch='sudo pacman -Sc'
 # alias wi='sudo wifi-menu'
 # alias rw="sudo netctl restart wlp58s0-University\ of\ Washington"
+export PATH="$PATH:/opt/mssql-tools/bin"
