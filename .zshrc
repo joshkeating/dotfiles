@@ -73,9 +73,6 @@ export EDITOR='vim'
 SSH_ENV=$HOME/.ssh/environment
 
 # start the ssh-agent
-
-# uncomment this after ive fixed my keys
-
 function start_agent {
     echo "Initializing new SSH agent..."
     # spawn ssh-agent
