@@ -126,7 +126,7 @@ alias logout='killall -u josh'
 alias am='alsamixer'
 
 export PATH="$PATH:/opt/mssql-tools/bin"
-alias cap='scrot -s ~/scrots/tmp/%b%d::%H%M%S.png'
+alias cap='scrot -s ~/scrots/%b%d::%H%M%S.png'
 
 
 # Deprecated aliases (Arch Linux)
