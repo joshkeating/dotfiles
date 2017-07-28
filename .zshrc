@@ -124,7 +124,7 @@ alias dmon='~/Scripts/disconnect-monitor.sh'
 # alias cat=ccat
 alias logout='killall -u josh'
 alias am='alsamixer'
-
+alias service='systemctl --type=service'
 export PATH="$PATH:/opt/mssql-tools/bin"
 alias cap='scrot -s ~/scrots/%b%d::%H%M%S.png'
 
