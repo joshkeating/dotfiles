@@ -1,8 +1,8 @@
 ! Run $ xrdb ~/.Xresources to source after updating
-! (only necessary for arch)
 
 ! Display settings
 
+! dpi scaling - 96, 120 (25% higher), 144 (50% higher), 168 (75% higher), 192 (100% higher)
 Xft.dpi: 120
 Xft.autohint: false
 Xft.lcdfilter:  lcddefault

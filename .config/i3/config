@@ -182,6 +182,9 @@ mode "resize" {
 # resize the window
 bindsym $mod+r mode "resize"
 
+# start compton
+exec compton -CGb
+
 # start polybar
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
