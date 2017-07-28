@@ -3,7 +3,7 @@
 
 ! Display settings
 
-Xft.dpi: 116
+Xft.dpi: 120
 Xft.autohint: false
 Xft.lcdfilter:  lcddefault
 Xft.hintstyle:  hintslight
