@@ -70,7 +70,7 @@ URxvt.scrollBar:            false
 URxvt.cursorBlink:          true
 
 
-! Transparency settings
+! Transparency settings (really should use a compositor for this)
 ! URxvt.transparent: true
 ! URxvt.shading: 30
 

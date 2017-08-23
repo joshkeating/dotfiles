@@ -216,6 +216,9 @@ exec feh --bg-scale /home/josh/Pictures/Walls/linas-bam-223729.jpg
   	 #}
 #}
 
+# feh stuff
+for_window [class="feh"] floating enable
+floating_maximum_size 1440 x 900
 
 
 
