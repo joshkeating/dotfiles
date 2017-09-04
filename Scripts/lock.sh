@@ -3,6 +3,6 @@
 
 scrot /tmp/screen.png
 convert /tmp/screen.png -scale 10% -scale 1000% /tmp/screen.png
-convert /home/josh/Pictures/Icons/lockscreen-icons/padlock2.png -scale 95% /tmp/lock-icon.png
+convert /home/josh/Pictures/icons/lock-fill.png -scale 95% /tmp/lock-icon.png
 convert /tmp/screen.png /tmp/lock-icon.png -gravity center -composite -matte /tmp/screen.png
 i3lock -u -i /tmp/screen.png

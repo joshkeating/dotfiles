@@ -102,7 +102,7 @@ GOPATH=$HOME/Code
 alias ls='ls -l --color=auto'
 alias colors='./Scripts/colors.sh'
 alias stats='screenfetch'
-alias lock='gnome-screensaver-command -l'
+alias lock='~/Scripts/lock.sh'
 alias run='rofi -show run'
 alias pipes='./Scripts/pipes.sh'
 alias shutdown='sudo shutdown now'
