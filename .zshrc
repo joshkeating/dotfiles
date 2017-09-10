@@ -128,9 +128,4 @@ alias service='systemctl --type=service'
 export PATH="$PATH:/opt/mssql-tools/bin"
 alias cap='scrot -s ~/scrots/%b%d::%H%M%S.png'
 
-
-# Deprecated aliases (Arch Linux)
-
-# alias clch='sudo pacman -Sc'
-# alias wi='sudo wifi-menu'
-# alias rw="sudo netctl restart wlp58s0-University\ of\ Washington"
+ alias clch='sudo pacman -Sc'
