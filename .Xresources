@@ -16,9 +16,9 @@ Xft.rgba: rgb
 ! Colors sourced from https://material.io/guidelines/style/color.html#color-color-palette
 
 ! foreground / background
-*.foreground:   #eeeeee
+*.foreground:   #EEEEEE
 *.background:   #1B2428
-*.cursorColor:  #eeeeee
+*.cursorColor:  #EEEEEE
 
 ! dark black 00
 *.color0:       #455A64
@@ -26,39 +26,39 @@ Xft.rgba: rgb
 *.color8:       #78909C
 
 ! dark red 01
-*.color1:       #D32F2F
+*.color1:       #B32727
 ! red
-*.color9:       #F44336
+*.color9:       #F22010
 
 ! dark green 02
-*.color2:       #4CAF50
+*.color2:       #3F9343
 ! green
-*.color10:      #81C784
+*.color10:      #65BB69
 
 ! dark yellow 03
-*.color3:       #FBC02D
+*.color3:       #FAB406
 ! yellow
-*.color11:     #FFEB3B
+*.color11:      #EED500
 
 ! dark blue
-*.color4:       #1976D2
+*.color4:       #1562AF
 ! blue
-*.color12:     #2196F3
+*.color12:      #0C82E0
 
 ! dark purple 05
-*.color5:       #9575CD
+*.color5:       #7E58C2
 ! purple
-*.color13:      #B39DDB
+*.color13:      #9C80D0
 
 ! dark teal 06
-*.color6:       #00897B
+*.color6:       #007468
 ! teal
-*.color14:      #4DB6AC
+*.color14:      #409C93
 
 ! dark white 07
-*.color7:       #BDBDBD
+*.color7:       #A9A9A9
 ! white 0F
-*.color15:      #EEEEEE
+*.color15:      #DADADA
 
 
 ! terminal emulator settings
