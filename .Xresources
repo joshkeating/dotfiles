@@ -70,7 +70,7 @@ URxvt.scrollBar:            false
 URxvt.cursorBlink:          true
 
 
-! Transparency settings (really should use a compositor for this)
+! Transparency settings (depricated in favor of compton transparency)
 ! URxvt.transparent: true
 ! URxvt.shading: 30
 
