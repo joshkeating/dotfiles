@@ -105,8 +105,10 @@ label-disconnected = %{F#E53935} %{F#E53935} not connected
 
 [module/date]
 type = internal/date
-date = %{F#eeeeee} %{F#eeeeee} %l:%M
+date = %{F#eeeeee}%b %d
+time = %{F#eeeeee}%l:%M %p
 interval = 5
+label = %date% %time%
 # format-underline = #E53935
 
 
