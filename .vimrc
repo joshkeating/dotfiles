@@ -9,15 +9,16 @@ set nocompatible
 set showcmd
 
 set laststatus=2
-execute pathogen#infect()
-let g:airline_powerline_fonts = 1
+" going to disable themes for awhile, preformance issues
+"execute pathogen#infect()
+"let g:airline_powerline_fonts = 1
 
-if !exists('g:airline_symbols')
-	let g:airline_symbols = {}
-endif
+"if !exists('g:airline_symbols')
+"	let g:airline_symbols = {}
+"endif
 
 "let g:airline_symbols.linenr = ''
-let g:airline_theme="luna"
+"let g:airline_theme="luna"
 " Set to auto read when a file is changed from the outside
 set autoread
 
