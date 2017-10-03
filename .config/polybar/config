@@ -81,7 +81,7 @@ label-urgent-padding = 3
 [module/cpu]
 type = internal/cpu
 interval = 5
-label = %{F#eeeeee}%{F#eeeeee} %percentage%
+label = %{F#eeeeee}%{F#eeeeee} %percentage%
 # format-underline = #8D6E63
 
 
