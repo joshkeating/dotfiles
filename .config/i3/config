@@ -108,12 +108,6 @@ bindsym $mod+a focus parent
 # focus the child container
 #bindsym $mod+d focus child
 
-# define variables
-# set $workspace1 ""
-# set $workspace2 ""
-# set $workspace3 ""
-# set $workspace4 ""
-
 # switch to workspace
 bindsym $mod+1 workspace 1
 bindsym $mod+2 workspace 2
@@ -185,43 +179,16 @@ mode "resize" {
 # resize the window
 bindsym $mod+r mode "resize"
 
+# startup programs
+
 # start compton
 exec compton -CGb
-
 # start polybar
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
-
 # set wallpaper
 exec feh --bg-scale /home/josh/Pictures/Walls/newzealand.jpg
 
-# This is uneeded with the ploybar launch script
-# Start i3bar to display a workspace bar (plus the system information i3status
-# finds out, if available)
-#bar {
-	
-	#status_command polybar Bar
-    #tray_output primary
-    #position bottom
-	#tray_output primary
-
-	#status_command ~/.config/i3/i3status_primary.sh ~/.i3status.conf
-	#status_command i3status
-
-	#font pango:Source Sans Pro, Awesome 14
-	#colors {
-		#statusline	#ffffff	
-		#background	#2c2e2f
-		    # class 	       border 		backgrd 	text
-        	#focused_workspace      #6D9CBE 		#6D9CBE 	#2c2e2f
-        	#active_workspace       #2c2e2f 		#2c2e2f 	#696f89
-        	#inactive_workspace     #2c2e2f 		#2c2e2f 	#696f89
-        	#urgent_workspace       #2c2e2f 		#2c2e2f 	#c7a551
-  	 #}
-#}
-
 # feh stuff
 for_window [class="feh"] floating enable
-# floating_maximum_size 1440 x 900
-
 
 
