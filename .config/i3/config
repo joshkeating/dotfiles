@@ -140,7 +140,7 @@ bindsym $mod+Shift+Tab workspace prev
 hide_edge_borders smart
 
 # colors
-set $blue #42A5F5
+set $blue #0C82E0
 set $dark #1B2428
 set $grey #DADADA
 set $red  #F22010
