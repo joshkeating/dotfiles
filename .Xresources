@@ -2,7 +2,7 @@
 
 ! Display settings
 
-! dpi scaling - 96, 120 (25% higher), 144 (50% higher), 168 (75% higher), 192 (100% higher)
+! dpi scaling: 96, 120 (25% higher), 144 (50% higher), 168 (75% higher), 192 (100% higher)
 Xft.dpi: 120
 Xft.autohint: false
 Xft.lcdfilter:  lcddefault
@@ -13,7 +13,8 @@ Xft.rgba: rgb
 
 ! Define terminal/vim  colors
 
-! Colors sourced from https://material.io/guidelines/style/color.html#color-color-palette
+! inspiration for colors drawn from:
+! https://material.io/guidelines/style/color.html#color-color-palette
 
 ! foreground / background
 *.foreground:   #EEEEEE
@@ -60,14 +61,13 @@ Xft.rgba: rgb
 ! white 0F
 *.color15:      #DADADA
 
-
 ! terminal emulator settings
 URxvt*termName: rxvt-unicode-256color
 URxvt.font: xft:Hack:Regular:size=10
-URxvt.letterSpace: -0.4
 URxvt.scrollStyle:          rxvt
 URxvt.scrollBar:            false
 URxvt.cursorBlink:          true
+! URxvt.letterSpace: 
 
 
 ! Transparency settings (depricated in favor of compton transparency)
