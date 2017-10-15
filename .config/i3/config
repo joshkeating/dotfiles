@@ -191,7 +191,7 @@ exec compton -CGb
 # start polybar
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 # set wallpaper
-exec feh --bg-scale /home/josh/Pictures/Walls/newzealand.jpg
+exec feh --bg-scale /home/josh/Pictures/walls/newzealand.jpg
 
 # feh stuff
 for_window [class="feh"] floating enable
