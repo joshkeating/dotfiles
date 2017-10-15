@@ -13,53 +13,45 @@ Xft.rgba: rgb
 
 ! Define terminal/vim  colors
 
-! inspiration for colors drawn from:
-! https://material.io/guidelines/style/color.html#color-color-palette
 
-! foreground / background
-*.foreground:   #EEEEEE
-*.background:   #1B2428
-*.cursorColor:  #EEEEEE
+! special
+*.foreground:   #D8DBD9
+*.background:   #1d1f21
+*.cursorColor:  #D8DBD9
 
-! dark black 00
-*.color0:       #455A64
-! black 08
-*.color8:       #78909C
+! black
+*.color0:       #1d1f21
+*.color8:       #969896
 
-! dark red 01
-*.color1:       #B32727
 ! red
-*.color9:       #F22010
+*.color1:       #cc342b
+*.color9:       #cc342b
 
-! dark green 02
-*.color2:       #3F9343
 ! green
-*.color10:      #65BB69
+*.color2:       #22b45b
+*.color10:      #22b45b
 
-! dark yellow 03
-*.color3:       #FAB406
 ! yellow
-*.color11:      #EED500
+*.color3:       #fba922
+*.color11:      #fba922
 
-! dark blue
-*.color4:       #1562AF
 ! blue
-*.color12:      #0C82E0
+*.color4:       #296eff
+*.color12:      #296eff
 
-! dark purple 05
-*.color5:       #7E58C2
-! purple
-*.color13:      #9C80D0
+! magenta
+*.color5:       #a36ac7
+*.color13:      #a36ac7
 
-! dark teal 06
-*.color6:       #007468
-! teal
-*.color14:      #409C93
+! cyan
+*.color6:       #296eff
+*.color14:      #296eff
 
-! dark white 07
-*.color7:       #A9A9A9
-! white 0F
-*.color15:      #DADADA
+! white
+*.color7:       #D8DBD9
+*.color15:      #ffffff
+
+
 
 ! terminal emulator settings
 URxvt*termName: rxvt-unicode-256color
@@ -67,6 +59,7 @@ URxvt.font: xft:Hack:Regular:size=10
 URxvt.scrollStyle:          rxvt
 URxvt.scrollBar:            false
 URxvt.cursorBlink:          true
+URxvt*cursorUnderline:      false
 ! URxvt.letterSpace: 
 
 
@@ -84,7 +77,7 @@ rofi.bw: 0
 rofi.location: 1
 rofi.width: 1920
 rofi.color-enabled: true
-rofi.color-window: #1B2428
+rofi.color-window: #1d1f21
 ! Colors:          bg       fg       bg alt   hl bg    hl fg
-rofi.color-normal: #1B2428, #2196F3, #1B2428, #1B2428, #fbc02d
-
+rofi.color-normal: #1d1f21, #296eff, #1d1f21, #1d1f21, #fbc02d
+rofi.color-active: #1d1f21, #296eff, #1d1f21, #1d1f21, #fbc02d
