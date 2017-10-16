@@ -108,10 +108,10 @@ master-mixer = Master
 headphone-id = 9
 format-volume = <label-volume>
 label-volume = %{F#D8DBD9} %{F#D8DBD9}%percentage%
-# format-muted-foreground = #ffca28
+format-muted-foreground = #fba922
 label-muted = sound muted
 # format-volume-underline = #7E57C2
-format-muted-underline = #fba922
+# format-muted-underline = #fba922
 
 
 [module/battery]
