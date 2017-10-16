@@ -125,6 +125,6 @@ alias logout='killall -u josh'
 alias am='alsamixer'
 alias service='systemctl --type=service'
 export PATH="$PATH:/opt/mssql-tools/bin"
-alias cap='scrot -s ~/scrots/%b%d::%H%M%S.png'
+alias cap='scrot -q 90 -s ~/Pictures/scrots/%b-%d-%r.png'
 alias atu='ssh jfk8@klaatu.cs.washington.edu'
 alias clch='sudo pacman -Sc'
