@@ -13,4 +13,4 @@
 # add -u to disable unlock indicator
 
 # lock with image
-i3lock -f -i ~/Pictures/lockscreen/lockscreen.png -t
+i3lock -f -i ~/Pictures/lockscreen/lockscreennocirclepng.png -t
