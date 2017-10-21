@@ -65,6 +65,10 @@ set tabstop=4           " number of visual spaces per TAB
 set softtabstop=4       " number of spaces in tab when editing
 set expandtab           " tabs are spaces
 
+" Disable fold column
+set foldcolumn=0
+
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Fonts
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -84,4 +88,8 @@ set background=dark
 " cursorline highlighting
 set cursorline
 hi CursorLine  cterm=NONE ctermbg=238 ctermfg=NONE
+
+" messing around with numberline colors
+highlight LineNr ctermfg=grey
+highlight CursorLineNr ctermfg=cyan
 
