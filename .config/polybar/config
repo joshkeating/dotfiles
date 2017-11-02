@@ -21,7 +21,7 @@ scroll-up = i3wm-wsnext
 scroll-down = i3wm-wsprev
 modules-left = i3
 # modules-center = 
-modules-right = wifi volume backlight battery cpu memory date
+modules-right = nowplaying wifi volume backlight battery cpu memory date
 font-0 = SourceSansPro:weight=regular:size=14;3
 font-1 = FontAwesome:style=Regular:size=14;3
 width = 100%
@@ -141,8 +141,9 @@ animation-charging-1 = ""
 type = custom/script
 interval = 5
 format = <label>
-format-prefix = "  "
-exec = ~/Scripts/read-json-gpmdp.py
+format-foreground = #fba922
+format-prefix = "  "
+exec = ~/Scripts/gpmdp-nowplaying.sh
 
 [module/backlight]
 type = internal/xbacklight
