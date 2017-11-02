@@ -53,19 +53,19 @@ label-mode-padding = 3
 label-mode-background = #e60053
 label-focused = %index%
 label-focused-foreground = #1d1f21
-# label-focused-underline = #296eff
 label-focused-background = #296eff
 label-focused-padding = 3
 label-unfocused = %index%
 label-unfocused-padding = 3
 label-visible = %index%
-label-visible-underline = #555555
+label-visible-background = #555555
 label-visible-padding = 3
 label-urgent = %index%
 label-urgent-foreground = #1d1f21
 label-urgent-background = #cc342b
-# label-urgent-underline = #cc342b
 label-urgent-padding = 3
+# label-urgent-underline = #cc342b
+# label-focused-underline = #296eff
 
 
 [module/cpu]
