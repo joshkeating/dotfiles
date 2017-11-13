@@ -139,7 +139,7 @@ animation-charging-1 = ""
 
 [module/nowplaying]
 type = custom/script
-interval = 5
+interval = 2
 format = <label>
 format-foreground = #fba922
 format-prefix = "  "
