@@ -7,14 +7,14 @@ allow_bold = true
 dynamic_title = true
 urgent_on_bell = true
 clickable_url = true
-font = Hack 10
+font = Hack 8
 scrollback_lines = 10000
 search_wrap = true
-#icon_name = terminal
-#geometry = 640x480
+# icon_name = terminal
+# geometry = 640x480
 
 # "system", "on" or "off"
-cursor_blink = system
+cursor_blink = on
 
 # "block", "underline" or "ibeam"
 cursor_shape = block
@@ -73,14 +73,14 @@ color15 = #ffffff
 
 
 [hints]
-#font = Monospace 12
-#foreground = #dcdccc
-#background = #3f3f3f
-#active_foreground = #e68080
-#active_background = #3f3f3f
-#padding = 2
-#border = #3f3f3f
-#border_width = 0.5
-#roundness = 2.0
+# font = Monospace 12
+# foreground = #dcdccc
+# background = #3f3f3f
+# active_foreground = #e68080
+# active_background = #3f3f3f
+# padding = 2
+# border = #3f3f3f
+# border_width = 0.5
+# roundness = 2.0
 
 # vim: ft=dosini cms=#%s
