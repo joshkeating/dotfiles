@@ -93,7 +93,7 @@ else
 fi
 
 # set path for golang (for termial execution)
-GOPATH=$HOME/Code
+GOPATH=$HOME
 
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
