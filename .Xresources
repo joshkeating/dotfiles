@@ -2,13 +2,13 @@
 
 ! Display settings
 
-! xps stats
+! actual xps stats
 ! ( xdpyinfo | grep -B 2 resolution )
 ! dimensions: 1920x1080 pixels (293x165 millimeters)
 ! resolution: 166x166 dots per inch
 
 ! dpi scaling: 96, 120 (25% higher), 144 (50% higher), 168 (75% higher), 192 (100% higher)
-Xft.dpi: 144
+Xft.dpi: 120
 Xft.autohint: false
 Xft.lcdfilter:  lcddefault
 Xft.hintstyle:  hintslight
