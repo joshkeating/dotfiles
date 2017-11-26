@@ -65,6 +65,9 @@ source $ZSH/oh-my-zsh.sh
 # Preferred editor for local and remote sessions
 export EDITOR='vim'
 
+# set mssql server path
+export PATH="$PATH:/opt/mssql-tools/bin"
+
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
@@ -124,7 +127,9 @@ alias dmon='~/Scripts/disconnect-monitor.sh'
 alias logout='killall -u josh'
 alias am='alsamixer'
 alias service='systemctl --type=service'
-export PATH="$PATH:/opt/mssql-tools/bin"
 alias cap='scrot -q 90 -s ~/Pictures/scrots/%b-%d-%r.png'
 alias atu='ssh jfk8@klaatu.cs.washington.edu'
 alias clch='sudo pacman -Sc'
+alias startwifi='systemctl stop netctl-auto@wlp58s0.service'
+alias stopwifi='systemctl start netctl-auto@wlp58s0.service'
+ 
