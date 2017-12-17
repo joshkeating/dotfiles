@@ -94,12 +94,5 @@ highlight LineNr ctermfg=grey
 highlight CursorLineNr ctermfg=cyan
 
 
-" need to fix this shit
-" Misc
-" set <F13>=^[[25~
-
-" Use caps lock as a toggle
-" nnoremap <F13> i
-" inoremap <F13> <Esc>l
 
 
