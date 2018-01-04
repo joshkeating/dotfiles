@@ -78,7 +78,7 @@ label = %{F#D8DBD9}%{F#D8DBD9} %percentage%
 [module/memory]
 type = internal/memory
 interval = 5
-label = %{F#D8DBD9}%{F#D8DBD9} %percentage_used%
+label = %{F#D8DBD9}%{F#D8DBD9} %percentage_used%
 # format-underline = #8D6E63
 
 
