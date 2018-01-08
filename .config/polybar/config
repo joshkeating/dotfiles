@@ -109,7 +109,7 @@ headphone-id = 9
 format-volume = <label-volume>
 label-volume = %{F#D8DBD9} %{F#D8DBD9}%percentage%
 format-muted-foreground = #fba922
-label-muted = sound muted
+label-muted = 
 # format-volume-underline = #7E57C2
 # format-muted-underline = #fba922
 
