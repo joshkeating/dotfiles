@@ -196,10 +196,15 @@ bindsym $mod+r mode "resize"
 exec compton -CGb
 # start polybar
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+# start light-locker
+exec light-locker
 # set wallpaper
-exec feh --bg-scale /home/josh/Pictures/walls/newzealand.jpg
+feh --bg-scale /home/josh/Pictures/walls/trees-and-mist/Desktop\ A.png
 
-# feh stuff
-for_window [class="feh"] floating enable
+# feh floating windows
+# for_window [class="feh"] floating enable
+
+# eog stuff
+for_window [class="Eog"] floating enable
 
 
