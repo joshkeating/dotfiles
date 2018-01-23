@@ -199,7 +199,7 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 # start light-locker
 exec light-locker
 # set wallpaper
-feh --bg-scale /home/josh/Pictures/walls/trees-and-mist/Desktop\ A.png
+feh --bg-scale /home/josh/Pictures/walls/trees-and-mist/DeskA.png
 
 # feh floating windows
 # for_window [class="feh"] floating enable
