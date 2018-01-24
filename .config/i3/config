@@ -104,7 +104,8 @@ bindsym ctrl+$mod+space exec rofi -show window
 # take selective screenshot with scrot
 # bindcode 107 exec scrot -s
 
-bindcode 73 exec ~/Scripts/lock.sh
+# bindcode 73 exec ~/Scripts/lock.sh
+bindcode 73 exec light-locker-command -l
 
 # focus the parent container
 bindsym $mod+a focus parent
@@ -197,9 +198,9 @@ exec compton -CGb
 # start polybar
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 # start light-locker
-exec light-locker
+exec light-locker --lock-after-screensaver=1
 # set wallpaper
-feh --bg-scale /home/josh/Pictures/walls/trees-and-mist/DeskA.png
+exec feh --bg-scale /home/josh/Pictures/walls/trees-and-mist/DeskA.png
 
 # feh floating windows
 # for_window [class="feh"] floating enable
