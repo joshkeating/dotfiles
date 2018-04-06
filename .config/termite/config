@@ -34,10 +34,10 @@ filter_unmatched_urls = true
 [colors]
 
 # special
-foreground      = #c5c8c6
-foreground_bold = #c5c8c6
+foreground      = #d4d4d4
+foreground_bold = #d4d4d4
 cursor          = #c5c8c6
-background      = #1d1f21
+background      = #1e1e1e
 
 # black
 color0  = #1d1f21
