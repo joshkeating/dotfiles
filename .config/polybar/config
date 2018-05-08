@@ -21,7 +21,7 @@ scroll-up = i3wm-wsnext
 scroll-down = i3wm-wsprev
 modules-left = i3
 # modules-center = 
-modules-right = nowplaying wifi volume backlight battery cpu memory date
+modules-right = nowplaying wifi pulseaudio backlight battery cpu memory date
 font-0 = SourceSansPro:weight=regular:size=14;3
 font-1 = MaterialIcons:style=Regular:size=14;4
 width = 100%
@@ -78,7 +78,7 @@ label = %{F#D8DBD9}%{F#D8DBD9} %percentage%
 [module/memory]
 type = internal/memory
 interval = 5
-label = %{F#D8DBD9}%{F#D8DBD9} %percentage_used%
+label = %{F#D8DBD9}%{F#D8DBD9} %percentage_used%
 # format-underline = #8D6E63
 
 
@@ -102,8 +102,30 @@ label = %date% %time%
 # format-underline = #E53935
 
 
+[module/pulseaudio]
+type = internal/pulseaudio
+; Sink to be used, if it exists (find using `pacmd list-sinks`, name field)
+; If not, uses default sink
+sink = alsa_output.pci-0000_00_1f.3.analog-stereo
+
+; Use PA_VOLUME_UI_MAX (~153%) if true, or PA_VOLUME_NORM (100%) if false
+; Default: true
+use-ui-max = true
+
+
+format-volume = <ramp-volume> <label-volume>
+format-muted-foreground = #fba922
+label-muted = 
+ramp-volume-0 = 
+ramp-volume-1 = 
+ramp-volume-2 = 
+
+
 [module/volume]
 type = internal/volume
+master-soundcard = default
+speaker-soundcard = default
+headphone-soundcard = default
 master-mixer = Master
 headphone-id = 9
 format-volume = <label-volume>
@@ -126,7 +148,7 @@ label-charging =  %percentage%
 
 # discharging
 format-discharging = <ramp-capacity> <label-discharging>
-ramp-capacity-0 = %{F#cc342b}
+ramp-capacity-0 = %{F#cc342b}
 ramp-capacity-1 = %{F#fba922}
 ramp-capacity-2 = %{F#fba922}
 ramp-capacity-3 = %{F#22b45b}
