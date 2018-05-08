@@ -20,7 +20,7 @@ bottom = true
 scroll-up = i3wm-wsnext
 scroll-down = i3wm-wsprev
 modules-left = i3
-# modules-center = 
+;modules-center =  
 modules-right = nowplaying wifi pulseaudio backlight battery cpu memory date
 font-0 = SourceSansPro:weight=regular:size=14;3
 font-1 = MaterialIcons:style=Regular:size=14;4
@@ -70,15 +70,39 @@ label-urgent-padding = 3
 
 [module/cpu]
 type = internal/cpu
-interval = 5
-label = %{F#D8DBD9}%{F#D8DBD9} %percentage%
-# format-underline = #8D6E63
+interval = 3
+label = CPU %percentage%%
+; label = %{F#D8DBD9}%{F#D8DBD9} %percentage%
+; format-underline = #8D6E63
 
 
 [module/memory]
 type = internal/memory
-interval = 5
-label = %{F#D8DBD9}%{F#D8DBD9} %percentage_used%
+interval = 3
+
+format = <label>
+
+; Available tokens:
+;   %percentage_used% (default)
+;   %percentage_free%
+;   %gb_used%
+;   %gb_free%
+;   %gb_total%
+;   %mb_used%
+;   %mb_free%
+;   %mb_total%
+;   %percentage_swap_used%
+;   %percentage_swap_free%
+;   %mb_swap_total%
+;   %mb_swap_free%
+;   %mb_swap_used%
+;   %gb_swap_total%
+;   %gb_swap_free%
+;   %gb_swap_used%
+
+label = MEM %gb_used%
+
+; label = %{F#D8DBD9}%{F#D8DBD9} %percentage_used%
 # format-underline = #8D6E63
 
 
@@ -119,7 +143,7 @@ label-muted = 
 ramp-volume-0 = 
 ramp-volume-1 = 
 ramp-volume-2 = 
-
+ramp-volume-3 = 
 
 [module/volume]
 type = internal/volume
