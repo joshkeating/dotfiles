@@ -103,11 +103,11 @@ GOPATH=$HOME
 # plugins, and themes. 
 
 alias ls='ls -l --color=auto'
-alias colors='./Scripts/colors.sh'
+alias colors='~/Scripts/colors.sh'
 alias stats='screenfetch'
 alias lock='~/Scripts/lock.sh'
 alias run='rofi -show run'
-alias pipes='./Scripts/pipes.sh'
+alias pipes='~/Scripts/pipes.sh'
 alias shutdown='sudo shutdown now'
 alias reboot='sudo reboot now'
 alias gst='git status'

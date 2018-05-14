@@ -33,43 +33,28 @@ filter_unmatched_urls = true
 
 [colors]
 
-# special
-foreground      = #d4d4d4
-foreground_bold = #d4d4d4
-cursor          = #c5c8c6
-background      = #1e1e1e
-
-# black
-color0  = #1d1f21
-color8  = #969896
-
-# red
-color1  = #cc6666
-color9  = #cc6666
-
-# green
-color2  = #66bb6a
-color10 = #66bb6a
-
-# yellow
-color3  = #f0c674
-color11 = #f0c674
-
-# blue
-color4  = #1871da
-color12 = #1871da
-
-# magenta
-color5  = #c397d8
-color13 = #c397d8
-
-# cyan
-color6  = #8abeb7
-color14 = #8abeb7
-
-# white
-color7  = #c5c8c6
-color15 = #ffffff
+foreground = #F8F8F2
+forground_bold = #F8F8F2
+cursor =     #F8F8F2
+background = #20212b
+color0 =     #000000
+color8 =     #4D4D4D
+color1 =     #FF5555
+color9 =     #FF6E67
+color2 =     #50FA7B
+color10 =    #5AF78E
+color3 =     #F1FA8C
+color11 =    #F4F99D
+#blues
+color4 =     #598EFC
+color12 =    #598EFC
+color5 =     #FF79C6
+color13 =    #FF92D0
+#purples
+color6 =     #BD93F9
+color14 =    #CAA9FA
+color7 =     #BFBFBF
+color15 =    #E6E6E6
 
 
 [hints]
