@@ -1,8 +1,8 @@
 [colors]
-background = #1e1e1e
-foreground = #D8DBD9
-linecolor = #296eff
-bordercolor = #296eff
+background = #20212b
+foreground = #F8F8F2
+linecolor = #598EFC
+bordercolor = #598EFC
 accent = #e60053
 
 [settings]
@@ -52,20 +52,21 @@ label-mode = %mode%
 label-mode-padding = 3
 label-mode-background = #e60053
 label-focused = %index%
-label-focused-foreground = #1e1e1e
-label-focused-background = #296eff
+label-focused-foreground = #20212b
+label-focused-background = #598EFC
 label-focused-padding = 3
 label-unfocused = %index%
 label-unfocused-padding = 3
 label-visible = %index%
-label-visible-background = #555555
+label-visible-foreground = #20212b
+label-visible-background = #BFBFBF
 label-visible-padding = 3
 label-urgent = %index%
-label-urgent-foreground = #1e1e1e
-label-urgent-background = #cc342b
+label-urgent-foreground = #20212b
+label-urgent-background = #FF5555
 label-urgent-padding = 3
-# label-urgent-underline = #cc342b
-# label-focused-underline = #296eff
+# label-urgent-underline = #FF5555
+# label-focused-underline = #598EFC
 
 
 [module/cpu]
@@ -111,10 +112,10 @@ type = internal/network
 interface = wlp58s0
 interval = 3.0
 format-connected = <label-connected>
-label-connected = %{F#296eff} %essid%
-label-disconnected = %{F#cc342b} %{F#cc342b} not connected
-# format-disconnected-underline = #cc342b
-# format-connected-underline = #296eff
+label-connected = %{F#598EFC} %essid%
+label-disconnected = %{F#FF5555} %{F#FF5555} not connected
+# format-disconnected-underline = #FF5555
+# format-connected-underline = #598EFC
 
 
 [module/date]
@@ -138,7 +139,7 @@ use-ui-max = true
 
 
 format-volume = <ramp-volume> <label-volume>
-format-muted-foreground = #fba922
+format-muted-foreground = #F1FA8C
 label-muted = 
 ramp-volume-0 = 
 ramp-volume-1 = 
@@ -154,10 +155,10 @@ master-mixer = Master
 headphone-id = 9
 format-volume = <label-volume>
 label-volume = %{F#D8DBD9} %{F#D8DBD9}%percentage%
-format-muted-foreground = #fba922
+format-muted-foreground = #F1FA8C
 label-muted = 
 # format-volume-underline = #7E57C2
-# format-muted-underline = #fba922
+# format-muted-underline = #F1FA8C
 
 
 [module/battery]
@@ -172,25 +173,25 @@ label-charging =  %percentage%
 
 # discharging
 format-discharging = <ramp-capacity> <label-discharging>
-ramp-capacity-0 = %{F#cc342b}
-ramp-capacity-1 = %{F#fba922}
-ramp-capacity-2 = %{F#fba922}
-ramp-capacity-3 = %{F#22b45b}
-ramp-capacity-4 = %{F#22b45b}
+ramp-capacity-0 = %{F#FF5555}
+ramp-capacity-1 = %{F#F1FA8C}
+ramp-capacity-2 = %{F#F1FA8C}
+ramp-capacity-3 = %{F#FF5555}
+ramp-capacity-4 = %{F#FF5555}
 
 label-discharging = %percentage%
 
 
 # format-discharging-underline = #009688
-# format-charging-underline = #fba922
-# format-full-underline = #22b45b
+# format-charging-underline = #F1FA8C
+# format-full-underline = #FF5555
 
 
 [module/nowplaying]
 type = custom/script
 interval = 2
 format = <label>
-format-foreground = #fba922
+format-foreground = #F1FA8C
 format-prefix = "  "
 exec = ~/Scripts/gpmdp-nowplaying.sh
 
