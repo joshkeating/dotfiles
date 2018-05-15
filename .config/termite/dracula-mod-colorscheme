@@ -1,0 +1,30 @@
+[colors]
+#-------specials-------#
+foreground =     #F8F8F2
+forground_bold = #F8F8F2
+cursor =         #F8F8F2
+background =     #20212b
+#--------blacks--------#
+color0 =         #000000
+color8 =         #4D4D4D
+#---------reds---------#
+color1 =         #FF5555
+color9 =         #FF6E67
+#--------greens--------#
+color2 =         #50FA7B
+color10 =        #5AF78E
+#--------yellows-------#
+color3 =         #F1FA8C
+color11 =        #F4F99D
+#--------blues---------#
+color4 =         #598EFC
+color12 =        #598EFC
+#--------pinks---------#
+color5 =         #FF79C6
+color13 =        #FF92D0
+#--------purples-------#
+color6 =         #BD93F9
+color14 =        #CAA9FA
+#--------greys---------#
+color7 =         #BFBFBF
+color15 =        #E6E6E6
