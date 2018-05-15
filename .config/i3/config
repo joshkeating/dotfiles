@@ -146,18 +146,19 @@ bindsym $mod+Shift+Tab workspace prev
 hide_edge_borders smart
 
 # colors
-set $blue  #296eff
-set $dark  #1d1f21
-set $grey  #D8DBD9
-set $red   #cc342b
-set $white #ffffff
-set $arcdark #383c4a
+set $blue    #598EFC
+set $dark    #4D4D4D
+set $grey    #BFBFBF
+set $red     #FF5555
+set $white   #FFFFFF
+set $yellow  #F1FA8C
+set $arcdark #383C4A
 
 #colorclass		        border   background  text    indicator
-client.focused		        $blue  	 $blue 	     $white  $grey
-client.unfocused	        $arcdark $arcdark    $white  $grey
-client.focused_inactive	        $arcdark $arcdark    $white  $grey
-client.urgent		        $red 	 $red  	     $dark   $grey
+client.focused		        $blue  	 $blue 	     $white  $yellow
+client.unfocused	        $arcdark $arcdark    $white  $yellow
+client.focused_inactive	        $arcdark $arcdark    $white  $yellow
+client.urgent		        $red 	 $red  	     $dark   $yellow
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
