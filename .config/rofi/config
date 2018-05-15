@@ -12,7 +12,7 @@ rofi.show-icons:    false
 ! rofi.fake-transparency: true
 rofi.width: 1920
 rofi.color-enabled: true
-rofi.color-window: #1d1f21, #a89984, #a89984
+rofi.color-window: #20212B, #a89984, #a89984
 ! Colors:          bg       fg       bg alt   hl bg    hl fg
-rofi.color-normal: #1d1f21, #296eff, #1d1f21, #333537, #fbc02d
-rofi.color-active: #1d1f21, #296eff, #1d1f21, #333537, #fbc02d
+rofi.color-normal: #20212B, #598EFC, #20212B, #414357, #F1FA8C
+rofi.color-active: #20212B, #598EFC, #20212B, #414357, #F1FA8C
