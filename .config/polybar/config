@@ -4,6 +4,7 @@ foreground = #F8F8F2
 blue = #598EFC
 red = #FF5555
 yellow = #F1FA8C
+green = #50FA7B
 inactive = #BFBFBF
 
 
@@ -113,16 +114,12 @@ full-at = 100
 format-charging = <label-charging>
 label-charging =  %percentage%%
 format-discharging = <ramp-capacity> <label-discharging>
-ramp-capacity-0 = 
-ramp-capacity-1 = 
-ramp-capacity-2 = 
-ramp-capacity-3 = 
-ramp-capacity-4 = 
-ramp-capacity-foreground-0 = ${colors.red}
-ramp-capacity-foreground-1 = ${colors.yellow}
-ramp-capacity-foreground-2 = ${colors.yellow}
-ramp-capacity-foreground-3 = ${colors.foreground}
-ramp-capacity-foreground-4 = ${colors.foreground}
+# these colors have to set manually
+ramp-capacity-0 = %{F#FF5555}
+ramp-capacity-1 = %{F#F1FA8C}
+ramp-capacity-2 = %{F#F1FA8C}
+ramp-capacity-3 = %{F#50FA7B}
+ramp-capacity-4 = %{F#50FA7B}
 label-discharging = %percentage%%
 
 
