@@ -4,7 +4,7 @@
 
 import json
 
-with open("~/.config/Google Play Music Desktop Player/json_store/playback.json") as data_file:    
+with open("/home/josh/.config/Google Play Music Desktop Player/json_store/playback.json") as data_file:    
     data = json.load(data_file)
 
 is_playing = data["playing"]

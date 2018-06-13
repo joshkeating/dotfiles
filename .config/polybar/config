@@ -125,12 +125,12 @@ label-discharging = %percentage%%
 
 [module/nowplaying]
 type = custom/script
-# tail = true
+tail = true
 interval = 1
 format = <label>
 format-foreground = ${colors.yellow}
 format-prefix = "  "
-exec = ~/Scripts/gpmdp-nowplaying.sh
+exec = ~/Scripts/read-json-gpmdp.py
 
 
 [module/backlight]
