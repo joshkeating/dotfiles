@@ -3,4 +3,8 @@
 
 exec i3
 
-xmodmap ~/.speedswapper
+function swapKeys {
+    xmodmap /home/josh/.speedswapper
+}
+
+swapKeys
