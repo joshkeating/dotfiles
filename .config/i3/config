@@ -203,6 +203,8 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec light-locker --lock-after-screensaver=1
 # set wallpaper
 exec feh --bg-scale /home/josh/Pictures/walls/trees-and-mist/DeskA.png
+# swap keys
+exec xmodmap /home/josh/.speedswapper
 
 # feh floating windows
 # for_window [class="feh"] floating enable
