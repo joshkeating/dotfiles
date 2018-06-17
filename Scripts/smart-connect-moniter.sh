@@ -17,13 +17,7 @@ function connectMoniter {
 
 # reset wallpaper with feh to fix the background issue
 function updateWallpaper {
-	feh --bg-scale /home/josh/Pictures/walls/trees-and-mist/DeskA.png
-}
-
-function reloadPolybar {
-	LAUNCH_POLYBAR="$HOME/.config/polybar/launch.sh"
-	# execute script
-	"$LAUNCH_POLYBAR"
+	feh --bg-scale $HOME/Pictures/walls/trees-and-mist/DeskA.png
 }
 
 # keep polling xrander to see if external moniter shows up
@@ -33,7 +27,8 @@ while [ true ]; do
     	echo "output avalible!"
     	connectMoniter
     	updateWallpaper
-    	reloadPolybar
+    	# reload polbar in place
+    	nohup $HOME/.config/polybar/launch.sh &>/dev/null &
     	echo "moniter connected successfully!"
 
     	exit 0
