@@ -133,4 +133,3 @@ alias clch='sudo pacman -Sc'
 alias startwifi='systemctl stop netctl-auto@wlp58s0.service'
 alias stopwifi='systemctl start netctl-auto@wlp58s0.service'
 
-

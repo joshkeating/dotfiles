@@ -206,8 +206,9 @@ exec feh --bg-scale /home/josh/Pictures/walls/trees-and-mist/DeskA.png
 # swap keys
 exec xmodmap /home/josh/.speedswapper
 
-# feh floating windows
+# floating windows
 # for_window [class="feh"] floating enable
+for_window [class="(?i)mpv"] floating enable
 
 # eog stuff
 for_window [class="Eog"] floating enable
