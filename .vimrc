@@ -89,10 +89,11 @@ set background=dark
 set cursorline
 hi CursorLine  cterm=NONE ctermbg=238 ctermfg=NONE
 
-" messing around with numberline colors
+" numberline colors
 highlight LineNr ctermfg=grey
 highlight CursorLineNr ctermfg=cyan
 
-
+" statusline
+hi StatusLine ctermbg=black ctermfg=grey
 
 
