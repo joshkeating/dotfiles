@@ -110,6 +110,7 @@ alias run='rofi -show run'
 alias pipes='~/Scripts/pipes.sh'
 alias shutdown='sudo shutdown now'
 alias reboot='sudo reboot now'
+# git commands
 alias gst='git status'
 alias adda='git add .'
 alias push='git push'
@@ -132,4 +133,11 @@ alias atu='ssh jfk8@klaatu.cs.washington.edu'
 alias clch='sudo pacman -Sc'
 alias startwifi='systemctl stop netctl-auto@wlp58s0.service'
 alias stopwifi='systemctl start netctl-auto@wlp58s0.service'
+
+# sql server commands
+alias sqlstart='sudo systemctl start mssql-server.service'
+alias sqlstop='sudo systemctl stop mssql-server.service'
+alias sqlst='sudo systemctl status mssql-server.service'
+
+
 
