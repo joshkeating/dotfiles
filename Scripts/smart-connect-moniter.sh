@@ -4,6 +4,7 @@
 EXR_RIGHT='xrandr --output eDP1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output DP1 --mode 1920x1080 --pos 1920x0 --rotate normal'
 EXR_LEFT='xrandr --output eDP1 --primary --mode 1920x1080 --pos 1920x0 --rotate normal --output DP1 --mode 1920x1080 --pos 0x0 --rotate normal'
 EXR_BOTTOMLEFT='xrandr --output eDP1 --primary --mode 1920x1080 --pos 1920x312 --rotate normal --output DP1 --mode 1920x1080 --pos 0x1080 --rotate normal'
+EXR_BOTTOMRIGHT='xrandr --output eDP1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output DP1 --mode 1920x1080 --pos 1920x1080 --rotate normal'
 
 # check to see if external moniter (DP1) is avalible
 function isConnected {
@@ -12,7 +13,7 @@ function isConnected {
 
 # run xrander to initate the connection
 function connectMoniter {
-	$EXR_BOTTOMLEFT
+	$EXR_BOTTOMRIGHT
 }
 
 # reset wallpaper with feh to fix the background issue
