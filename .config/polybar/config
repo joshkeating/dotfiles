@@ -74,9 +74,9 @@ label = MEM %gb_used%
 [module/wifi]
 type = internal/network
 interface = wlp58s0
-interval = 3.0
+interval = 2
 format-connected = <label-connected>
-label-connected =  %essid%
+label-connected =  %essid%
 label-connected-foreground = ${colors.blue}
 label-disconnected =  not connected
 label-disconnected-foreground = ${colors.red}
