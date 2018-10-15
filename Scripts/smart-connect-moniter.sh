@@ -18,7 +18,7 @@ function connectMoniter {
 
 # reset wallpaper with feh to fix the background issue
 function updateWallpaper {
-	feh --bg-scale $HOME/Pictures/walls/trees-and-mist/DeskA.png
+	feh --bg-scale /home/josh/Pictures/walls/macos-walls/Abstract\ 9.jpg
 }
 
 # keep polling xrander to see if external moniter shows up
