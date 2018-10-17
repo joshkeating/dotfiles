@@ -202,7 +202,7 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 # start light-locker
 exec light-locker --lock-after-screensaver=1
 # set wallpaper
-exec feh --bg-scale /home/josh/Pictures/walls/trees-and-mist/DeskA.png
+exec feh --bg-scale /home/josh/Pictures/walls/macos-walls/Abstract\ 9.jpg
 # swap keys
 exec xmodmap /home/josh/.speedswapper
 
