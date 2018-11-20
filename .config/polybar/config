@@ -20,7 +20,7 @@ scroll-up = i3wm-wsnext
 scroll-down = i3wm-wsprev
 modules-left = i3
 # modules-center =  
-modules-right = nowplaying wifi pulseaudio backlight battery cpu memory date
+modules-right = wifi pulseaudio backlight battery cpu memory date
 font-0 = SourceSansPro:weight=regular:size=14;3
 font-1 = MaterialIcons:style=Regular:size=14;4
 width = 100%
