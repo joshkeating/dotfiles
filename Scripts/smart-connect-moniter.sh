@@ -5,14 +5,20 @@ EXR_RIGHT='xrandr --output eDP1 --primary --mode 1920x1080 --pos 0x0 --rotate no
 EXR_LEFT='xrandr --output eDP1 --primary --mode 1920x1080 --pos 1920x0 --rotate normal --output DP1 --mode 1920x1080 --pos 0x0 --rotate normal'
 EXR_BOTTOMLEFT='xrandr --output eDP1 --primary --mode 1920x1080 --pos 1920x312 --rotate normal --output DP1 --mode 1920x1080 --pos 0x1080 --rotate normal'
 EXR_BOTTOMRIGHT='xrandr --output eDP1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output DP1 --mode 1920x1080 --pos 1920x1080 --rotate normal'
+EXR_LABS='xrandr --output eDP1 --primary --mode 1920x1080 --pos 784x1440 --rotate normal --output DP1 --mode 3440x1440 --pos 0x0 --rotate normal'
 
 # check to see if external moniter (DP1) is avalible
 function isConnected {
     xrandr | grep "^DP1 connected"
 }
 
+# arg = ${1:-$EXR_BOTTOMRIGHT}
+
 # run xrander to initate the connection
 function connectMoniter {
+	# $arg
+	
+	# old
 	$EXR_BOTTOMRIGHT
 }
 
@@ -28,7 +34,7 @@ while [ true ]; do
     	echo "output avalible!"
     	connectMoniter
     	updateWallpaper
-    	# reload polbar in place
+    	# reload polybar in place
     	nohup $HOME/.config/polybar/launch.sh &>/dev/null &
     	echo "moniter connected successfully!"
 
