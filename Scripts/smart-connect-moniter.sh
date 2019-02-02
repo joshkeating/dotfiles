@@ -23,12 +23,13 @@ function isConnected {
 # run xrander to initate the connection
 function connectMoniter {
 
-	# change moniter outputs based on optional parameters
-	if [ "$optionalArg" == "labs" ]; then
-		$EXR_LABS
-	else
-		$optionalArg
-	fi
+	# change moniter outputs based on optional parameters (switch statement)
+    case $optionalArg in
+	   "labs") $EXR_LABS;;
+	   "left") $EXR_LEFT;;
+	   "right") $EXR_RIGHT;;
+	   *) $optionalArg;;
+	esac
 }
 
 # reset wallpaper with feh to fix the background issue
