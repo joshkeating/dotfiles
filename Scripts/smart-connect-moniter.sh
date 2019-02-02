@@ -29,9 +29,6 @@ function connectMoniter {
 	else
 		$optionalArg
 	fi
-
-	# old
-	# $EXR_BOTTOMRIGHT
 }
 
 # reset wallpaper with feh to fix the background issue
