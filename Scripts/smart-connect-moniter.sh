@@ -20,7 +20,7 @@ function isConnected {
     xrandr | grep "^DP1 connected"
 }
 
-# run xrander to initate the connection
+# run xrander to initiate the connection
 function connectMoniter {
 
 	# change moniter outputs based on optional parameters (switch statement)
