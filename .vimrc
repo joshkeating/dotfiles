@@ -68,6 +68,9 @@ set expandtab           " tabs are spaces
 " Disable fold column
 set foldcolumn=0
 
+set clipboard=unnamedplus
+
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Fonts

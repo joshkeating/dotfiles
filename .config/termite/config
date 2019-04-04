@@ -10,8 +10,7 @@ clickable_url = true
 font = Hack 10
 scrollback_lines = 10000
 search_wrap = true
-# icon_name = terminal
-# geometry = 640x480
+scrollbar = off
 
 # "system", "on" or "off"
 cursor_blink = on
@@ -19,17 +18,8 @@ cursor_blink = on
 # "block", "underline" or "ibeam"
 cursor_shape = block
 
-# $BROWSER is used by default if set, with xdg-open as a fallback
-#browser = xdg-open
-
-# set size hints for the window
-#size_hints = false
-
 # Hide links that are no longer valid in url select overlay mode
 filter_unmatched_urls = true
-
-# emit escape sequences for extra modified keys
-#modify_other_keys = false
 
 [colors]
 #-------specials-------#
