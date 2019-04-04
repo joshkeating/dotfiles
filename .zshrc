@@ -139,6 +139,7 @@ alias stopwifi='systemctl start netctl-auto@wlp58s0.service'
 alias sqlstart='sudo systemctl start mssql-server.service'
 alias sqlstop='sudo systemctl stop mssql-server.service'
 alias sqlst='sudo systemctl status mssql-server.service'
+alias vim='gvim -v'
 
 
 
