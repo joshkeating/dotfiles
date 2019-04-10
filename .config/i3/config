@@ -73,15 +73,15 @@ bindsym $mod+Shift+space floating toggle
 
 # incremental brightness controls
 # increase xbacklightbrightness
-bindsym Shift+XF86MonBrightnessUp exec xbacklight -inc 1
+bindcode 62+96 exec xbacklight -inc 1
 # decrease backlight brightness
-bindsym Shift+XF86MonBrightnessDown exec xbacklight -dec 1
+bindcode 62+95 exec xbacklight -dec 1
 
 # normal brightness controls
 # increase xbacklightbrightness
-bindsym XF86MonBrightnessUp exec xbacklight -inc 5
+bindcode 96 exec xbacklight -inc 5
 # decrease backlight brightness
-bindsym XF86MonBrightnessDown exec xbacklight -dec 5
+bindcode 95 exec xbacklight -dec 5
 
 # volume controls
 
@@ -92,9 +92,9 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 5
 
 # for pulseaudio
 set $sink `pactl list short sinks | cut -f1`
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume $sink +1%
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume $sink -1%
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute $sink toggle
+bindcode 69 exec --no-startup-id pactl set-sink-volume $sink +1%
+bindcode 68 exec --no-startup-id pactl set-sink-volume $sink -1%
+bindcode 67 exec --no-startup-id pactl set-sink-mute $sink toggle
 
 # launch rofi, dmenu emulation, in run mode
 bindsym $mod+space exec rofi -show drun
