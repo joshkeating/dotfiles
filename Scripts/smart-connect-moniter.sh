@@ -8,7 +8,7 @@ EXR_BOTTOMRIGHT='xrandr --output eDP1 --primary --mode 1920x1080 --pos 0x0 --rot
 EXR_LABS='xrandr --output eDP1 --primary --mode 1920x1080 --pos 784x1440 --rotate normal --output DP1 --mode 3440x1440 --pos 0x0 --rotate normal'
 
 # set the default position for the external moniter
-defaultPosition=$EXR_BOTTOMRIGHT
+defaultPosition=$EXR_RIGHT
 
 # if first passed parameter is unset or null, set the expanded value of optionalArg
 # to $defaultPosition. Otherwise, the value of the first parameter is substituted
