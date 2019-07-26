@@ -73,9 +73,9 @@ bindsym $mod+Shift+space floating toggle
 
 # incremental brightness controls
 # increase xbacklightbrightness
-bindcode 62+96 exec xbacklight -inc 1
+bindcode Shift+96 exec xbacklight -inc 1
 # decrease backlight brightness
-bindcode 62+95 exec xbacklight -dec 1
+bindcode Shift+95 exec xbacklight -dec 1
 
 # normal brightness controls
 # increase xbacklightbrightness
@@ -154,11 +154,11 @@ set $white   #FFFFFF
 set $yellow  #F1FA8C
 set $arcdark #383C4A
 
-#colorclass		        border   background  text    indicator
-client.focused		        $blue  	 $blue 	     $white  $yellow
-client.unfocused	        $arcdark $arcdark    $white  $yellow
-client.focused_inactive	        $arcdark $arcdark    $white  $yellow
-client.urgent		        $red 	 $red  	     $dark   $yellow
+#colorclass		            border    background  text    indicator
+client.focused		        $blue  	  $blue 	  $white  $yellow
+client.unfocused	        $arcdark  $arcdark    $white  $yellow
+client.focused_inactive	    $arcdark  $arcdark    $white  $yellow
+client.urgent		        $red 	  $red  	  $dark   $yellow
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -203,7 +203,7 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec light-locker --lock-after-screensaver=1
 # set wallpaper
 exec feh --bg-scale /home/josh/Pictures/walls/macos-walls/Abstract\ 9.jpg
-# swap keys
+# swap capslock and escape
 exec xmodmap /home/josh/.speedswapper
 
 # floating windows
