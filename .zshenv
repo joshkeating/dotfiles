@@ -4,6 +4,6 @@ function yt() {
 }    
 
 function yy() {
-	mpv --really-quiet --autofit=40% --geometry=0:1 --ytdl $1 &
+	mpv --really-quiet --autofit=50% --geometry=0:1 --ytdl $1 </dev/null &>/dev/null &
 }
 
