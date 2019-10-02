@@ -105,7 +105,7 @@ bindsym ctrl+$mod+space exec rofi -show window
 # take selective screenshot with scrot
 # bindcode 107 exec scrot -s
 
-# bindcode 73 exec ~/Scripts/lock.sh
+bindcode 73 exec ~/Scripts/lock.sh
 # bindcode 73 exec light-locker-command -l
 
 # focus the parent container
