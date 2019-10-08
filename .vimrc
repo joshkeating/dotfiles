@@ -1,26 +1,19 @@
 
-" Frankenstein vim config
-" See https://github.com/amix/vimrc for more
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set nocompatible 
+set nocompatible
+
+" Display current command
 set showcmd
 
+" Always display the status bar 
 set laststatus=2
-" going to disable themes for awhile, preformance issues
-"execute pathogen#infect()
-"let g:airline_powerline_fonts = 1
 
-"if !exists('g:airline_symbols')
-"	let g:airline_symbols = {}
-"endif
-
-"let g:airline_symbols.linenr = ''
-"let g:airline_theme="luna"
 " Set to auto read when a file is changed from the outside
 set autoread
+
+
 
 " :W sudo saves the file 
 " (useful for handling the permission-denied error)
