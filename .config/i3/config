@@ -198,18 +198,18 @@ bindsym $mod+r mode "resize"
 exec compton -CGb
 # start polybar
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
-# start light-locker
-exec light-locker --lock-after-screensaver=1
+# start session locker
+exec --no-startup-id xss-lock -- i3lock -f -i ~/Pictures/walls/mm.png -t &
 # set wallpaper
 exec feh --bg-scale $HOME/Pictures/walls/mm.png
 # swap capslock and escape
 exec xmodmap $HOME/.speedswapper
 
 # floating windows
+
 # for_window [class="feh"] floating enable
 for_window [class="(?i)mpv"] floating enable
-
-# eog stuff
+# eog
 for_window [class="Eog"] floating enable
 
 
