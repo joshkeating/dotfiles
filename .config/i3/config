@@ -105,8 +105,7 @@ bindsym ctrl+$mod+space exec rofi -show window
 # take selective screenshot with scrot
 # bindcode 107 exec scrot -s
 
-bindcode 73 exec ~/Scripts/lock.sh
-# bindcode 73 exec light-locker-command -l
+bindcode 73 exec i3lock -f -i ~/Pictures/walls/mm.png -t
 
 # focus the parent container
 bindsym $mod+a focus parent
@@ -202,9 +201,9 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 # start light-locker
 exec light-locker --lock-after-screensaver=1
 # set wallpaper
-exec feh --bg-scale /home/josh/Pictures/walls/macos-walls/Abstract\ 9.jpg
+exec feh --bg-scale $HOME/Pictures/walls/mm.png
 # swap capslock and escape
-exec xmodmap /home/josh/.speedswapper
+exec xmodmap $HOME/.speedswapper
 
 # floating windows
 # for_window [class="feh"] floating enable
