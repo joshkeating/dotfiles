@@ -57,8 +57,11 @@ source $ZSH/oh-my-zsh.sh
 # Preferred editor for local and remote sessions
 export EDITOR='vim'
 
-# set mssql server path
-export PATH="$PATH:/opt/mssql-tools/bin"
+export XDG_SESSION_TYPE=wayland 
+export GDK_BACKEND=wayland
+
+# for waybar
+export XDG_CURRENT_DESKTOP=Unity
 
 # export rust cargo path
 export PATH="$HOME/.cargo/bin:$PATH"
@@ -110,7 +113,6 @@ alias lock='~/Scripts/lock.sh'
 alias pipes='~/Scripts/pipes.sh'
 alias cmon='~/Scripts/smart-connect-moniter.sh'
 alias dmon='~/Scripts/disconnect-monitor.sh'
-alias ram='~/Scripts/reset-amixer-levels.sh'
 alias mnt='sudo ./Scripts/mount-usb-drive.sh'
 alias umnt='sudo ./Scripts/umount-usb-drive.sh'
 
@@ -121,19 +123,5 @@ alias push='git push'
 alias pull='git pull'
 alias merge='git merge'
 alias diff='git diff'
-
-# sql server commands
-alias sqlstart='sudo systemctl start mssql-server.service'
-alias sqlstop='sudo systemctl stop mssql-server.service'
-alias sqlst='sudo systemctl status mssql-server.service'
-
-# deprecated
-# alias light='~/Scripts/lightbg.sh'
-# alias dark='~/Scripts/darkbg.sh'
-# alias atu='ssh jfk8@klaatu.cs.washington.edu'
-# alias startwifi='systemctl stop netctl-auto@wlp58s0.service'
-# alias stopwifi='systemctl start netctl-auto@wlp58s0.service'
-# alias syncsite='aws s3 sync ~/Code/joshuakeating.com_v2 s3://joshuakeating.com --exclude ".git/*" --exclude ".vscode/*" '
-
 
 # ---------------- end custom config block ---------------- #
