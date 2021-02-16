@@ -69,8 +69,8 @@ bindsym $mod+e layout toggle split
 bindsym $mod+Shift+space floating toggle
 
 # brightness
-bindsym --locked XF86MonBrightnessUp exec --no-startup-id light -A 5
-bindsym --locked XF86MonBrightnessDown exec --no-startup-id light -U 5
+bindcode 96 exec brightnessctl set +5%
+bindcode 95 exec brightnessctl set 5%-
 
 # pulseaudio controls
 set $sink `pactl list short sinks | cut -f1`
