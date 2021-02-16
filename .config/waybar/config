@@ -25,6 +25,7 @@
     "modules-right": [
         "network",
         "pulseaudio",
+        "backlight",
         "memory",
         "cpu",
         "temperature",
@@ -122,6 +123,12 @@
         },
         "on-click": "pavucontrol"
     },
+
+    "backlight": {
+        "format": "{icon} {percent}%",
+        "format-icons": [" ",""]
+    },
+
 
     "temperature": {
       "critical-threshold": 80,
