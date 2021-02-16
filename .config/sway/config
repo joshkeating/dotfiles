@@ -1,0 +1,212 @@
+# current i3 config
+# remember to $mod+Shift+r for changes to take place
+
+# i3 config file (v4)
+#
+# Please see http://i3wm.org/docs/userguide.html for a complete reference!
+
+set $mod Mod4
+set $term alacritty
+
+# Font for window titles. Will also be used by the bar unless a different font
+# is used in the bar {} block below.
+font pango:Cantarell 14px
+
+# Set border width for all new windows
+default_border pixel 1
+
+# Use Mouse+$mod to drag floating windows to their wanted position
+floating_modifier $mod
+
+# start a terminal
+bindsym $mod+Return exec alacritty
+
+# kill focused window
+bindsym $mod+Shift+q kill
+
+# start dmenu (a program launcher)
+bindsym $mod+d exec dmenu_run
+
+# change focus
+bindsym $mod+j focus left
+bindsym $mod+k focus down
+bindsym $mod+l focus up
+bindsym $mod+semicolon focus right
+
+# alternatively, you can use the cursor keys:
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+
+# move focused window
+bindsym $mod+Shift+j move left
+bindsym $mod+Shift+k move down
+bindsym $mod+Shift+l move up
+bindsym $mod+Shift+semicolon move right
+
+# alternatively, you can use the cursor keys:
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+
+# split in horizontal orientation
+bindsym $mod+h split h
+
+# split in vertical orientation
+bindsym $mod+v split v
+
+# enter fullscreen mode for the focused container
+bindsym $mod+f fullscreen toggle
+
+# change container layout (stacked, tabbed, toggle split)
+bindsym $mod+s layout stacking
+bindsym $mod+w layout tabbed
+bindsym $mod+e layout toggle split
+
+# toggle tiling / floating
+bindsym $mod+Shift+space floating toggle
+
+# brightness
+bindsym --locked XF86MonBrightnessUp exec --no-startup-id light -A 5
+bindsym --locked XF86MonBrightnessDown exec --no-startup-id light -U 5
+
+# pulseaudio controls
+set $sink `pactl list short sinks | cut -f1`
+bindcode 69 exec --no-startup-id pactl set-sink-volume $sink +1%
+bindcode 68 exec --no-startup-id pactl set-sink-volume $sink -1%
+bindcode 67 exec --no-startup-id pactl set-sink-mute $sink toggle
+
+# launch rofi, dmenu emulation, in run mode
+bindsym $mod+space exec rofi -show drun
+
+# launch rofi in window switching mode
+bindsym ctrl+$mod+space exec rofi -show window
+
+# focus the parent container
+bindsym $mod+a focus parent
+
+# switch to workspace
+bindsym $mod+1 workspace 1
+bindsym $mod+2 workspace 2
+bindsym $mod+3 workspace 3
+bindsym $mod+4 workspace 4
+bindsym $mod+5 workspace 5
+bindsym $mod+6 workspace 6
+bindsym $mod+7 workspace 7
+bindsym $mod+8 workspace 8
+bindsym $mod+9 workspace 9
+bindsym $mod+0 workspace 10
+
+# move focused container to workspace
+bindsym $mod+Shift+1 move container to workspace 1
+bindsym $mod+Shift+2 move container to workspace 2
+bindsym $mod+Shift+3 move container to workspace 3
+bindsym $mod+Shift+4 move container to workspace 4
+bindsym $mod+Shift+5 move container to workspace 5
+bindsym $mod+Shift+6 move container to workspace 6
+bindsym $mod+Shift+7 move container to workspace 7
+bindsym $mod+Shift+8 move container to workspace 8
+bindsym $mod+Shift+9 move container to workspace 9
+bindsym $mod+Shift+0 move container to workspace 10
+
+# tab between workspaces
+bindsym $mod+Tab workspace next
+bindsym $mod+Shift+Tab workspace prev
+
+# hide window edge borders
+hide_edge_borders smart
+
+# colors
+set $blue    #598EFC
+set $dark    #4D4D4D
+set $grey    #BFBFBF
+set $red     #FF5555
+set $white   #FFFFFF
+set $yellow  #F1FA8C
+set $arcdark #383C4A
+
+#colorclass		            border    background  text    indicator
+client.focused		        $blue  	  $blue 	  $white  $yellow
+client.unfocused	        $arcdark  $arcdark    $white  $yellow
+client.focused_inactive	    $arcdark  $arcdark    $white  $yellow
+client.urgent		        $red 	  $red  	  $dark   $yellow
+
+# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+bindsym $mod+Shift+r restart
+
+# Reload the configuration file
+bindsym $mod+Shift+c reload
+# Exit sway (logs you out of your Wayland session)
+bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -b 'Yes, exit sway' 'swaymsg exit'
+
+
+# resize window (you can also use the mouse for that)
+mode "resize" {
+        # These bindings trigger as soon as you enter the resize mode
+
+        # Pressing left will shrink the window’s width.
+        # Pressing right will grow the window’s width.
+        # Pressing up will shrink the window’s height.
+        # Pressing down will grow the window’s height.
+        bindsym j resize shrink width 10 px or 10 ppt
+        bindsym k resize grow height 10 px or 10 ppt
+        bindsym l resize shrink height 10 px or 10 ppt
+        bindsym semicolon resize grow width 10 px or 10 ppt
+
+        # same bindings, but for the arrow keys
+        bindsym Left resize shrink width 10 px or 10 ppt
+        bindsym Down resize grow height 10 px or 10 ppt
+        bindsym Up resize shrink height 10 px or 10 ppt
+        bindsym Right resize grow width 10 px or 10 ppt
+
+        # back to normal: Enter or Escape
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+# resize the window
+bindsym $mod+r mode "resize"
+
+bar {
+    # Run waybar instead of swaybar
+    swaybar_command waybar
+}
+
+input "type:keyboard" {
+    xkb_layout us
+    xkb_options caps:escape
+}
+
+input type:touchpad {
+    tap enabled
+}
+
+
+
+
+
+# --- startup programs ---
+
+### Idle configuration
+exec swayidle -w \
+          timeout 300 'swaylock -f -i ~/Pictures/walls/landscapes/may-showers/triad-a.png' \
+          timeout 600 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
+          before-sleep 'swaylock -f -i ~/Pictures/walls/landscapes/may-showers/triad-a.png'
+
+# This will lock your screen after 300 seconds of inactivity, then turn off
+# your displays after another 300 seconds, and turn your screens back on when
+# resumed. It will also lock your screen before your computer goes to sleep.
+
+# set HiDPI scaling
+output eDP-1 scale 1
+
+# set wallpaper
+output "*" bg ~/Pictures/walls/landscapes/may-showers/triad-a.png stretch
+
+### floating windows
+for_window [class="(?i)mpv"] floating enable
+# eog
+for_window [class="Eog"] floating enable
+
+
