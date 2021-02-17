@@ -1,9 +1,6 @@
-# current i3 config
-# remember to $mod+Shift+r for changes to take place
+# current sway config
 
-# i3 config file (v4)
-#
-# Please see http://i3wm.org/docs/userguide.html for a complete reference!
+# Read `man 5 sway` for a complete reference.
 
 set $mod Mod4
 set $term alacritty
@@ -78,12 +75,6 @@ bindcode 69 exec --no-startup-id pactl set-sink-volume $sink +1%
 bindcode 68 exec --no-startup-id pactl set-sink-volume $sink -1%
 bindcode 67 exec --no-startup-id pactl set-sink-mute $sink toggle
 
-# launch rofi, dmenu emulation, in run mode
-bindsym $mod+space exec rofi -show drun
-
-# launch rofi in window switching mode
-bindsym ctrl+$mod+space exec rofi -show window
-
 # focus the parent container
 bindsym $mod+a focus parent
 
@@ -133,39 +124,33 @@ client.unfocused	        $arcdark  $arcdark    $white  $yellow
 client.focused_inactive	    $arcdark  $arcdark    $white  $yellow
 client.urgent		        $red 	  $red  	  $dark   $yellow
 
-# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
-bindsym $mod+Shift+r restart
 
 # Reload the configuration file
 bindsym $mod+Shift+c reload
 # Exit sway (logs you out of your Wayland session)
 bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -b 'Yes, exit sway' 'swaymsg exit'
 
-
-# resize window (you can also use the mouse for that)
+# Resizing containers:
 mode "resize" {
-        # These bindings trigger as soon as you enter the resize mode
+    # left will shrink the containers width
+    # right will grow the containers width
+    # up will shrink the containers height
+    # down will grow the containers height
+    bindsym $left resize shrink width 10px
+    bindsym $down resize grow height 10px
+    bindsym $up resize shrink height 10px
+    bindsym $right resize grow width 10px
 
-        # Pressing left will shrink the window’s width.
-        # Pressing right will grow the window’s width.
-        # Pressing up will shrink the window’s height.
-        # Pressing down will grow the window’s height.
-        bindsym j resize shrink width 10 px or 10 ppt
-        bindsym k resize grow height 10 px or 10 ppt
-        bindsym l resize shrink height 10 px or 10 ppt
-        bindsym semicolon resize grow width 10 px or 10 ppt
+    # Ditto, with arrow keys
+    bindsym Left resize shrink width 10px
+    bindsym Down resize grow height 10px
+    bindsym Up resize shrink height 10px
+    bindsym Right resize grow width 10px
 
-        # same bindings, but for the arrow keys
-        bindsym Left resize shrink width 10 px or 10 ppt
-        bindsym Down resize grow height 10 px or 10 ppt
-        bindsym Up resize shrink height 10 px or 10 ppt
-        bindsym Right resize grow width 10 px or 10 ppt
-
-        # back to normal: Enter or Escape
-        bindsym Return mode "default"
-        bindsym Escape mode "default"
+    # Return to default mode
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
 }
-# resize the window
 bindsym $mod+r mode "resize"
 
 bar {
@@ -181,9 +166,6 @@ input "type:keyboard" {
 input type:touchpad {
     tap enabled
 }
-
-
-
 
 
 # --- startup programs ---
