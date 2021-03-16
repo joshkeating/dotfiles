@@ -60,6 +60,9 @@ export EDITOR='vim'
 export XDG_SESSION_TYPE=wayland 
 export GDK_BACKEND=wayland
 
+# make IntelliJ work
+export _JAVA_AWT_WM_NONREPARENTING=1
+
 # for waybar
 export XDG_CURRENT_DESKTOP=Unity
 
