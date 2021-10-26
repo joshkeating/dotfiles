@@ -1,6 +1,6 @@
 
 function yt() {
-    youtube-dl --extract-audio --audio-format mp3 --audio-quality 0 $1
+    yt-dlp --extract-audio --audio-format mp3 --audio-quality 0 $1
 }    
 
 function yy() {
